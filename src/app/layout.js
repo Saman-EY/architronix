@@ -3,12 +3,14 @@ import "./globals.css";
 import favicon from "@/app/favicon.ico";
 import LayoutChildren from "@/lib/layoutChildren";
 import ProgressCircle from "@/components/ui/scrollCircle";
+import HeaderThree from "@/components/header/headerThree";
+import Footer from "@/components/footer";
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--plus-jakarta-sans',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--plus-jakarta-sans",
+});
 
 export const metadata = {
   title: "Architronix",
@@ -34,9 +36,10 @@ export default function RootLayout({ children }) {
             </div>
           </div>
           {/* ------ body line end */}
-          <ProgressCircle />
           <LayoutChildren>
+            <HeaderThree />
             {children}
+            <Footer />
           </LayoutChildren>
         </div>
       </body>
