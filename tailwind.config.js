@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-  ],
+  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}", "./src/**/*.{js,jsx}"],
   prefix: "",
   theme: {
     extend: {
@@ -15,29 +10,29 @@ module.exports = {
         "4xl": "1700px",
         "3xl": "1600px",
         "2xl": "1400px",
-        "xl": "1200px",
-        "lg": "992px",
-        "md": "960px",
+        xl: "1200px",
+        lg: "992px",
+        md: "960px",
         "2sm": "768px",
-        "sm": "576px",
-        "xm": "340px"
+        sm: "576px",
+        xm: "340px",
       },
       spacing: {
-        "2.5": "10px",
-        "3.5": "20px",
-        "7.5": "30px",
-        "8.5": "40px",
-        "12.5": "50px",
-        "15": "60px",
-        "17.5": "70px",
-        "25": "100px",
-        "30": "120px",
+        2.5: "10px",
+        3.5: "20px",
+        7.5: "30px",
+        8.5: "40px",
+        12.5: "50px",
+        15: "60px",
+        17.5: "70px",
+        25: "100px",
+        30: "120px",
       },
       lineHeight: {
-        "110": "110%",
-        "120": "120%",
-        "135": "135%",
-        "160": "160%",
+        110: "110%",
+        120: "120%",
+        135: "135%",
+        160: "160%",
       },
       backgroundImage: {
         "overlay-liner": "linear-gradient(0deg, rgba(210, 224, 217, 0.55) 0%, rgba(210, 224, 217, 0.55) 100%)",
@@ -70,9 +65,9 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        "slideDown": {
+        slideDown: {
           from: { transform: " translateY(-100%)" },
-          to: { transform: "translateY(0)" }
+          to: { transform: "translateY(0)" },
         },
         "accordion-down": {
           from: { height: "0" },
@@ -82,27 +77,27 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "dash": {
-          to: { "stroke-dashoffset": 0 }
+        dash: {
+          to: { "stroke-dashoffset": 0 },
         },
-        "filling": {
+        filling: {
           "0%": {
-            "fill": "currentColor",
-            "fill-opacity": "0"
+            fill: "currentColor",
+            "fill-opacity": "0",
           },
           "90%": {
-            "fill": "currentColor",
-            "fill-opacity": "0"
+            fill: "currentColor",
+            "fill-opacity": "0",
           },
 
           "100%": {
-            "fill": "currentColor",
-            "fill-opacity": "0"
-          }
-        }
+            fill: "currentColor",
+            "fill-opacity": "0",
+          },
+        },
       },
       animation: {
-        "slideDown": "slideDown 0.35s ease-out",
+        slideDown: "slideDown 0.35s ease-out",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "text-line-animation": "dash 4s linear forwards, filling 4s ease-in forwards",
@@ -110,4 +105,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

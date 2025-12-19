@@ -1,4 +1,4 @@
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import favicon from "@/app/favicon.ico";
 import LayoutChildren from "@/lib/layoutChildren";
@@ -10,6 +10,12 @@ const plus_jakarta_sans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--plus-jakarta-sans",
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata = {
@@ -23,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${plus_jakarta_sans.variable}`} suppressHydrationWarning={true}>
+      <body className={`${plus_jakarta_sans.variable} ${roboto.variable}`} suppressHydrationWarning={true}>
         <div id="page-wrapper" className="!relative ">
           {/* ------ body line start */}
           <div className="w-full h-full fixed -z-[1] top-0 left-0 right-0 mx-auto page-lines">
