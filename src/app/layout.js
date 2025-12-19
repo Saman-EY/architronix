@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
           </div>
           {/* ------ body line end */}
           <LayoutChildren>
-            <HeaderThree />
+            {/* <HeaderThree /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </LayoutChildren>
         </div>
       </body>

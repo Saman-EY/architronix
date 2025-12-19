@@ -39,7 +39,7 @@ const TeamCardOne = ({ img, social_link, name, position, text_muted, cardVariant
             <span className='w-[1px] h-full bg-[#253B2F4D] block absolute left-2'></span>
             <span className='w-[1px] h-full bg-[#253B2F4D] block absolute right-2'></span>
           </div>
-          <Link href={"/team-single"} className='flex items-center justify-between px-[27px] pt-[9px] pb-[18px]'>
+          <Link href={"/career"} className='flex items-center justify-between px-[27px] pt-[9px] pb-[18px]'>
             <label>
               <span className={cn(`text-2xl font-bold leading-160 text-primary-foreground cursor-pointer ${text_muted}`)}>{name}</span>
               <small className={cn(`text-primary-foreground text-lg block ${text_muted}`)}>{position}</small>

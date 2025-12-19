@@ -1,3 +1,5 @@
+import Footer from "@/components/footer";
+import HeaderThree from "@/components/header/headerThree";
 import AboutOne from "@/components/section/about/aboutOne";
 import BlogSlider from "@/components/section/blogSlider";
 import Feedback from "@/components/section/feedback";
@@ -23,6 +25,8 @@ export const metadata = {
 const Home = () => {
   return (
     <>
+      <HeaderThree />
+
       <BannerThree />
       <AboutOne />
       <Counter />
@@ -33,11 +37,11 @@ const Home = () => {
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
-            sectionName={"Team"}
-            sectionTitle={"Architects of Architronix"}
-            sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
-            button_text={"All Architects"}
-            link={"/team"}
+            sectionName={"DAR GLOBAL "}
+            sectionTitle={"АРХИТЕКТОРЫ ПРОЕКТА AIDA"}
+            sectionDesc={"ГДЕ ПРИРОДА ВСТРЕЧАЕТСЯ С РОСКОШЬЮ НА ВЫСОТЕ 130 МЕТРОВ"}
+            button_text={"ВСЕ ОБЪЕКТЫ"}
+            link={"/project-single"}
           />
         </div>
         <div className="container lg:pt-[340px] 2sm:pt-20 pt-14">
@@ -67,9 +71,9 @@ const Home = () => {
       <section className="pt-20">
         <div className="container-fluid">
           <SectionTitle
-            sectionName={"Blog"}
-            sectionTitle={"Design Insights & Inspiration"}
-            sectionDesc={"Unveil the Secrets to Transforming Spaces"}
+            sectionName={"GULF DOM"}
+            sectionTitle={"АНАЛИТИКА И ИНСАЙТЫ"}
+            sectionDesc={"РАЗБИРАЕМ ТРЕНДЫ РЫНКА ЭЛИТНОЙ НЕДВИЖИМОСТИ"}
           />
         </div>
         <div className="container lg:pt-30 2sm:pt-20 pt-14">
@@ -79,6 +83,7 @@ const Home = () => {
       {/* -------- blog slider end */}
 
       <Feedback />
+      <Footer />
     </>
   );
 };

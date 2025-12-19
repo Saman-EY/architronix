@@ -14,7 +14,7 @@ const Gallery = ({ text_muted, bg_muted }) => {
         <section className='pt-20'>
             <div className='container-fluid '>
                 <SectionTitle
-                    sectionName={"Gallery"}
+                    sectionName={"DAR GLOBAL "}
                     sectionTitle={"НАШИ ЭКСКЛЮЗИВНЫЕ ПРОЕКТЫ"}
                     sectionDesc={"ГДЕ МЕЧТЫ СТАНОВЯТСЯ РЕАЛЬНОСТЬЮ"}
                     link={"/project-archive"}

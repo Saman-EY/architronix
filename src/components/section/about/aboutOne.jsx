@@ -33,7 +33,7 @@ const AboutOne = ({ text_muted, bg_muted }) => {
     <section className="pt-20">
       <div className="container-fluid ">
         <SectionTitle
-          sectionName={"About Us"}
+          sectionName={"GULF DOM"}
           sectionTitle={"О КОМПАНИИ GULF DOM"}
           sectionDesc={"КОНСАЛТИНГ И ПРОДАЖА ПРЕМИУМ-НЕДВИЖИМОСТИ"}
           text_muted={text_muted}

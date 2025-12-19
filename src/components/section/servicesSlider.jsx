@@ -20,7 +20,7 @@ const ServicesSlider = ({ text_muted, bg_muted }) => {
         <section className='pt-20'>
             <div className='container-fluid'>
                 <SectionTitle
-                    sectionName={"Services"}
+                    sectionName={"GULF DOM"}
                     sectionTitle={"НАШИ КЛЮЧЕВЫЕ УСЛУГИ"}
                     sectionDesc={"ПОЛНЫЙ ЦИКЛ СОПРОВОЖДЕНИЯ ИНВЕСТОРА"}
                     link={"/services"}
