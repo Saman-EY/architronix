@@ -29,11 +29,11 @@ const Home = () => {
 
       <BannerThree />
       <AboutOne />
+
       <Counter />
       <Gallery />
       <ServicesSlider />
 
-      {/* --------- start team section */}
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
@@ -60,14 +60,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* --------- start team section */}
 
       <VideoPortfolio />
       <ProjectsSlider />
       <Testimonial />
       <ShopSlider data={productData.slice(0, 5)} />
-
-      {/* -------- blog slider start */}
       <section className="pt-20">
         <div className="container-fluid">
           <SectionTitle
@@ -80,10 +77,11 @@ const Home = () => {
           <BlogSlider data={blogData.slice(0, 4)} />
         </div>
       </section>
-      {/* -------- blog slider end */}
 
       <Feedback />
       <Footer />
+
+  
     </>
   );
 };

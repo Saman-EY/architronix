@@ -27,7 +27,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
         >
           <div className="container flex lg:flex-row flex-col justify-between relative z-10">
             <div className="2xl:max-w-[637px] lg:max-w-[500px] w-full">
-              <h4 className="text-secondary-foreground text-3xl 2sm:text-4xl font-bold leading-135">
+              <h4 className="text-secondary-foreground text-2xl sm:text-4xl font-bold leading-135">
                 УЗНАЙТЕ ОБ ЭКСКЛЮЗИВНОМ ПРОЕКТЕ
               </h4>
               <p className="text-secondary-foreground mt-5">
@@ -37,17 +37,17 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
               <ul className="mt-[35px]">
                 <li className="text-secondary-foreground flex items-center gap-[27px]">
                   <RightArrow width={"35"} height={"22"} />{" "}
-                  <span className="text-secondary-foreground text-2xl leading-160 font-bold">УНИКАЛЬНАЯ КОНЦЕПЦИЯ</span>{" "}
+                  <span className="text-secondary-foreground text-lg leading-160 font-bold">УНИКАЛЬНАЯ КОНЦЕПЦИЯ</span>{" "}
                 </li>
                 <li className="text-secondary-foreground flex items-center gap-[27px] mt-4">
                   <RightArrow width={"35"} height={"22"} />{" "}
-                  <span className="text-secondary-foreground text-2xl leading-160 font-bold">
+                  <span className="text-secondary-foreground text-lg leading-160 font-bold">
                     ПАРТНЕРСТВО С МИРОВЫМИ БРЕНДАМИ
                   </span>{" "}
                 </li>
                 <li className="text-secondary-foreground flex items-center gap-[27px] mt-4">
                   <RightArrow width={"35"} height={"22"} />{" "}
-                  <span className="text-secondary-foreground text-2xl leading-160 font-bold">
+                  <span className="text-secondary-foreground text-lg leading-160 font-bold">
                     ПРОФЕССИОНАЛЬНОЕ УПРАВЛЕНИЕ
                   </span>{" "}
                 </li>
@@ -55,7 +55,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
               <Link href={"/project-single"} className="mt-[70px] inline-block">
                 <ButtonOutline
                   className={
-                    "border-secondary text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
+                    "border-secondary text-base md:text-lg text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
                   }
                 >
                   УЗНАТЬ ПОДРОБНОСТИ <RightArrow width={"35"} height={"22"} />

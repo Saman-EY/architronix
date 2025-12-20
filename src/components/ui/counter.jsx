@@ -27,7 +27,7 @@ const Counter = ({ text_muted, bg_muted }) => {
   return (
     <div className="pt-20">
       <div className="container">
-        <ul className="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-10 ">
+        <ul className="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-10 ">
           {counterList.map(({ id, count, title }) => {
             return (
               <li key={id} className="flex flex-col">

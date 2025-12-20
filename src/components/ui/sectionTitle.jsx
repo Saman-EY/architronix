@@ -49,7 +49,7 @@ const SectionTitle = ({ sectionName, sectionTitle, sectionDesc, text_muted, bg_m
         >
           <h2
             className={cn(
-              `[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-primary-foreground mb-5 ${text_muted}`
+              `text-[2rem] md:text-[4rem] font-extrabold leading-110 text-primary-foreground mb-5 ${text_muted}`
             )}
             dangerouslySetInnerHTML={{ __html: sectionTitle }}
           />

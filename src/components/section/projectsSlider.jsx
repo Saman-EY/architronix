@@ -20,7 +20,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
     renderBullet: function (index, className) {
       return `
                     <div class='opacity-0 relative h-0 translate-y-15 ${className}'>
-                        <h2 class='text-secondary-foreground leading-120 [font-size:_clamp(48px,8vw,82px)] font-extrabold '>${projectsData[index].project_name}</h2>
+                        <h2 class='text-secondary-foreground leading-120 text-xl mb-3 sm:text-4xl font-extrabold '>${projectsData[index].project_name}</h2>
                         <a href="/project-single" class='text-secondary-foreground mt-[30px]'>${projectsData[index].project_desc}</a>
                     </div>
                     `;
@@ -60,21 +60,21 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                   className='bg-cover bg-no-repeat pb-[70px] lg:pt-[758px] pt-[500px] max-w-[1550px] after:contents-[""] after:absolute after:top-0 after:right-0 after:w-full after:h-full after:bg-bottom-liner after:z-[1] after:max-w-[1550px] ml-auto'
                   style={{ backgroundImage: `url(${project_img.src})` }}
                 >
-                  <div className="flex xl:justify-end justify-center -mt-36 xl:-mt-0 5xl:gap-20 3xl:gap-14 sm:gap-10 gap-4 max-w-[1166px] relative z-10 ml-auto pr-7.5">
-                    <h6 className="flex flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
+                  <div className="flex flex-col sm:flex-row items-center xl:justify-end justify-center -mt-36 xl:-mt-0 5xl:gap-20 3xl:gap-14 sm:gap-10 gap-4 max-w-[1166px] relative z-10 ml-auto pr-7.5">
+                    <h6 className="flex w-full max-w-[11rem]  flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       КЛИЕНТУ:
                       <span className="text-lg font-normal">{client}</span>
                     </h6>
 
-                    <h6 className="sm:flex hidden flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
+                    <h6 className="sm:flex  w-full max-w-[11rem] hidden flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       ПЛОЩАДЬ:
                       <span className="text-lg font-normal">{area}</span>
                     </h6>
-                    <h6 className="sm:flex hidden flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap ">
+                    <h6 className="sm:flex w-full max-w-[11rem] hidden flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap ">
                       ГОД:
                       <span className="text-lg font-normal">{project_year}</span>
                     </h6>
-                    <h6 className="flex flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
+                    <h6 className="flex flex-col w-full max-w-[11rem] text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       ТИП:
                       <span className="text-lg font-normal">{project_type}</span>
                     </h6>
@@ -108,7 +108,11 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
               </ButtonFill>
             </div>
             <div onClick={() => swiperRef.current?.slidePrev()}>
-              <ButtonFill className={cn(`h-[75px] hover:border-primary sm:px-10 px-3 after:left-0 after:${bg_muted}`)}>
+              <ButtonFill
+                className={cn(
+                  `h-[75px] text-base sm:text-lg hover:border-primary sm:px-10 px-3 after:left-0 after:${bg_muted}`
+                )}
+              >
                 СЛЕДУЮЩИЙ ПРОЕКТ <RightArrow width={"35"} height={"22"} />
               </ButtonFill>
             </div>
