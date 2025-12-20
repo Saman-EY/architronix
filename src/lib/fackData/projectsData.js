@@ -7,7 +7,7 @@ export const projectsData = [
   {
     id: 1,
     project_name: "ДОХОД ОТ ОТЕЛЯ TRUMP®",
-    project_img: project_img_2,
+    project_img: "/house1.PNG",
     project_desc: "Владейте номером. Получайте пассивный доход и 2 недели личного отдыха ежегодно.",
     client: "",
     area: "45-107 м²",
@@ -19,7 +19,7 @@ export const projectsData = [
   {
     id: 2,
     project_name: "РЕЗИДЕНЦИИ MARRIOTT®",
-    project_img: project_img_3,
+    project_img: "/house2.PNG",
     project_desc: "Полностью меблированные апартаменты с управлением и сервисом от мирового бренда.",
     client: "",
     area: "67-134 м²",
@@ -31,7 +31,7 @@ export const projectsData = [
   {
     id: 3,
     project_name: "TRUMP GOLF VILLAS",
-    project_img: project_img_1,
+    project_img: "/house3.JPG",
     project_desc: "Эксклюзивные виллы с прямым доступом к чемпионскому полю для гольфа Trump.",
     client: "",
     area: "250-400 м²",
@@ -43,7 +43,7 @@ export const projectsData = [
   {
     id: 4,
     project_name: "MFA Lakeside",
-    project_img: project_img_4,
+    project_img: "/house4.JPG",
     project_desc:
       "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
     client: "",

@@ -9,7 +9,7 @@ const Feedback = () => {
     <section className="container py-20">
       <div
         className="bg-cover bg-no-repeat lg:pt-[117px] pt-20 pb-[69px] lg:pl-[148px] pl-10 lg:pr-[133px] 2sm:pr-24 pr-10 flex md:flex-row flex-col justify-between md:items-end items-start"
-        style={{ backgroundImage: `url(${feedback_bg.src})` }}
+        style={{ backgroundImage: `url("/topFooter.JPG")` }}
       >
         <h1 className="[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-secondary-foreground max-w-[600px]">
           Напишите нам

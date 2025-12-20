@@ -1,11 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import RightArrow from "@/assets/icons/rightArrow";
-import video_thumb from "@/assets/images/video-image.jpg";
 import SectionTitle from "../ui/sectionTitle";
 import { cn } from "@/lib/utils";
-import VideoPlay from "../ui/videoPlay";
 import ButtonOutline from "../ui/buttons/buttonOutline";
+import VideoSec from "./VideoSec";
 
 const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
   return (
@@ -62,7 +60,8 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                 </ButtonOutline>
               </Link>
             </div>
-            <VideoPlay img={video_thumb} />
+            {/* <VideoPlay img={video_thumb} /> */}
+            <VideoSec />
           </div>
         </div>
       </div>

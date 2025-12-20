@@ -58,7 +58,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
               <SwiperSlide key={id}>
                 <div
                   className='bg-cover bg-no-repeat pb-[70px] lg:pt-[758px] pt-[500px] max-w-[1550px] after:contents-[""] after:absolute after:top-0 after:right-0 after:w-full after:h-full after:bg-bottom-liner after:z-[1] after:max-w-[1550px] ml-auto'
-                  style={{ backgroundImage: `url(${project_img.src})` }}
+                  style={{ backgroundImage: `url(${project_img})` }}
                 >
                   <div className="flex flex-col sm:flex-row items-center xl:justify-end justify-center -mt-36 xl:-mt-0 5xl:gap-20 3xl:gap-14 sm:gap-10 gap-4 max-w-[1166px] relative z-10 ml-auto pr-7.5">
                     <h6 className="flex w-full max-w-[11rem]  flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">

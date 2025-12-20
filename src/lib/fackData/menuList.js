@@ -2,54 +2,54 @@ import menu_image_1 from "@/assets/images/menu-image-1.png";
 export const menuList = [
   {
     id: 1,
-    name: "Home",
+    name: "Главная",
     path: "/",
     isMegaMenu: false,
     isDropdown: false,
   },
   {
     id: 2,
-    name: "Projects",
+    name: "Проекты",
     path: "/project-archive",
     isMegaMenu: false,
     isDropdown: false,
   },
   {
     id: 3,
-    name: "Services",
+    name: "Услуги",
     path: "/services",
     isMegaMenu: false,
     isDropdown: false,
   },
   {
     id: 4,
-    name: "Pages",
+    name: "Страницы",
     path: "#",
     isMegaMenu: false,
     isDropdown: [
       {
         id: 1,
-        name: "About Us",
+        name: "О нас",
         path: "/about-us",
       },
       {
         id: 2,
-        name: "Services",
+        name: "Услуги",
         path: "/services",
       },
       {
         id: 4,
-        name: "Project Single",
+        name: "Проект Оман",
         path: "/project-single",
       },
       {
         id: 5,
-        name: "Product Archive",
+        name: "Все проекты",
         path: "/product-archive",
       },
       {
         id: 8,
-        name: "Career",
+        name: "Инвестиции",
         path: "/career",
       },
     ],
@@ -57,7 +57,7 @@ export const menuList = [
 
   {
     id: 6,
-    name: "Contact",
+    name: "Контакты",
     path: "/contact",
     isMegaMenu: false,
     isDropdown: false,

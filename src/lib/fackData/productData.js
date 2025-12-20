@@ -9,7 +9,7 @@ import product_tab_2 from "@/assets/images/shop-tab-image-lg-2.jpg";
 export const productData = [
   {
     id: 1,
-    product_img: product_tab_1,
+    product_img: "/trump.JPG",
     prodcut_album: [product_tab_1, product_tab_2],
     product_name: "TRUMP INTERNATIONAL HOTEL",
     price: "134.99",
@@ -19,7 +19,7 @@ export const productData = [
   },
   {
     id: 2,
-    product_img: product_img_2,
+    product_img: "/marriot.JPG",
     prodcut_album: [product_img_1, product_img_2],
     product_name: "MARRIOTT RESIDENCES",
     price: "499.99",
@@ -29,7 +29,7 @@ export const productData = [
   },
   {
     id: 3,
-    product_img: product_img_3,
+    product_img: "/mens.JPG",
     prodcut_album: [product_img_1, product_img_2],
     product_name: "ПОЛЕ ДЛЯ ГОЛЬФА TRUMP",
     price: "249.99",
@@ -39,7 +39,7 @@ export const productData = [
   },
   {
     id: 4,
-    product_img: product_img_4,
+    product_img: "/theLast.PNG",
     prodcut_album: [product_img_1, product_img_2],
     product_name: "ВИЛЛЫ С ВИДОМ НА МОРЕ",
     price: "249.99",

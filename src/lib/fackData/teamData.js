@@ -15,7 +15,7 @@ import portfolio_5 from "@/assets/images/portfolio-5.jpg";
 export const teamData = [
   {
     id: 1,
-    img: team_1,
+    img: "/career1.PNG",
     name: "МЕНЕДЖЕР ПРОЕКТОВ",
     position: "Специализация: объекты под управлением бренда Trump",
     social_link: [
@@ -75,7 +75,7 @@ export const teamData = [
   },
   {
     id: 2,
-    img: team_2,
+    img: "/career2.PNG",
     name: "ЭКСПЕРТ ПО ИНВЕСТИЦИЯМ",
     position: "Специализация: проекты Dar Global в ОАЭ и Омане",
     social_link: [
@@ -135,7 +135,7 @@ export const teamData = [
   },
   {
     id: 3,
-    img: team_3,
+    img: "/career3.PNG",
     name: "КООРДИНАТОР ПРОДАЖ",
     position: "Специализация: премиум-клиенты и визовое сопровождение",
     social_link: [

@@ -31,7 +31,9 @@ const ProductCard = ({ product_img, product_name, price, rating, text_muted, bg_
             placeholder="blur"
             blurDataURL={staticBluarDataUrl}
             alt={product_name}
-            className="w-full h-full max-h-[506px]"
+            width={600}
+            height={600}
+            className="w-full h-full object-cover min-h-[550px]"
           />
         </div>
       </div>
@@ -46,9 +48,7 @@ const ProductCard = ({ product_img, product_name, price, rating, text_muted, bg_
           </span>
           {/* <p className={cn(`text-2xl text-primary-foreground ${text_muted}`)}>${price}</p> */}
         </div>
-        <div className="mt-2">
-          {/* <Rating star={rating} /> */}
-        </div>
+        <div className="mt-2">{/* <Rating star={rating} /> */}</div>
       </div>
     </div>
   );

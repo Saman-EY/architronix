@@ -9,11 +9,10 @@ const BlogCard = ({ thumb, date, tag, title, text_muted }) => {
       <Image
         src={thumb}
         loading="lazy"
-        placeholder="blur"
         alt={title}
-        width={"auto"}
-        height={"auto"}
-        className="w-full h-auto"
+        width={500}
+        height={500}
+        className="w-full h-40 object-cover"
       />
       <div className="mt-8">
         <p className={cn(`text-primary-foreground flex items-center gap-2 mb-2.5`)}>

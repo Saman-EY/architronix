@@ -67,8 +67,8 @@ const Gallery = ({ text_muted, bg_muted }) => {
                 loading="lazy"
                 placeholder="blur"
                 blurDataURL={staticBluarDataUrl}
-                width={"auto"}
-                height={"auto"}
+                width={700}
+                height={700}
                 className="h-full sm:min-h-[750px] min-h-[420px] w-full object-cover"
               />
             </div>
