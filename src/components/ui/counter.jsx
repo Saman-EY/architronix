@@ -9,7 +9,7 @@ const counterList = [
   },
   {
     id: 2,
-    count: "$2.3МЛРД+",
+    count: "$2.3М",
     title: "ОБЪЕМ ПРОЕКТОВ",
   },
   {
@@ -33,7 +33,7 @@ const Counter = ({ text_muted, bg_muted }) => {
               <li key={id} className="flex flex-col">
                 <span
                   className={cn(
-                    `[font-size:_clamp(48px,9vw,90px)] font-extrabold text-primary-foreground leading-120 overflow-y-hidden overflow-x-auto ${text_muted}`
+                    `text-[5rem] font-extrabold text-primary-foreground leading-120 overflow-y-hidden overflow-x-auto ${text_muted}`
                   )}
                 >
                   <span className="block md:hidden">{count}</span>

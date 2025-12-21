@@ -25,8 +25,8 @@ const BannerThree = () => {
         </video>
         <div className="container">
           <div className="absolute top-1/2 -translate-y-1/2">
-            <h1 className="text-white text-[2.5rem] md:text-[6rem] font-extrabold leading-[70%]">
-              <span className="leading-[5rem] block">Gulf Dom – Ключ к элитной недвижимости</span>
+            <h1 className="text-white text-[3.5rem] md:text-[5rem] font-extrabold leading-[70%]">
+              <span className="leading-[5rem] text-[4.5rem] md:text-[8rem] block">Gulf Dom</span>
               <br />
               <TextTyped text={["ИЗЫСКАННОСТЬ", "СОВЕРШЕНСТВО", "РОСКОШЬ", "ПРЕСТИЖ"]} />
             </h1>

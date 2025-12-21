@@ -16,9 +16,9 @@ const Career = () => {
       <section>
         <div className='container-fluid '>
           <SectionTitle
-            sectionName={"Career"}
-            sectionTitle={"Career Opportunities"}
-            sectionDesc={"Discover Your Future at Architronix: Where Innovation Meets Passion"}
+            sectionName={"ПОРТФОЛИО"}
+            sectionTitle={"НАШИ ПРОЕКТЫ В МИРЕ"}
+            sectionDesc={"Эксклюзивная недвижимость от Dar Global в самых желанных точках планеты"}
           />
         </div>
         <div className='container mt-30'>

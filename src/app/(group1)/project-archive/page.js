@@ -18,9 +18,9 @@ const ProjectArchive = () => {
     <section>
       <div className="container-fluid ">
         <SectionTitle
-          sectionName={"Archive"}
-          sectionTitle={"A Journey Through Our Past Projects"}
-          sectionDesc={"Exploring the Tapestry of Our Design Legacy"}
+          sectionName={"GULF DOM"}
+          sectionTitle={"НАШИ ПРОЕКТЫ В AIDA"}
+          sectionDesc={"Инвестиционные возможности мирового уровня  "}
         />
       </div>
       <div className="lg:pt-30 2sm:pt-20 pt-14">

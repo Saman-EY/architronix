@@ -1,68 +1,67 @@
 export const jobPostList = [
-    {
-        id: "01",
-        job_name: "Senior Interior Designer",
-        time: "Full time",
-        location: "USA,California",
-        date_line: "28 Feb 2024",
-        level: "Expert",
-        salary: {
-            range: "$45k - $60k",
-            time: "year"
-        },
-        link: "job-details"
+  {
+    id: "01",
+    job_name: "DUBAI, UAE",
+    time: "Проект",
+    location: "Trump International Hotel & Tower",
+    date_line: "Люксовый отель и резиденции",
+    level: "Статус: В реализации",
+    salary: {
+      range: "В партнерстве с Trump Org.",
+      time: "year",
     },
-    {
-        id: "02",
-        job_name: "Junior Architect",
-        time: "Part time",
-        location: "Remote",
-        date_line: "28 Feb 2024",
-        level: "Fresher",
-        salary: {
-            range: "$1500 - $1800",
-            time: "month"
-        },
-        link: "job-details"
+    link: "job-details",
+  },
+  {
+    id: "02",
+    job_name: "DOHA, QATAR",
+    time: "Проект",
+    location: "Les Vagues by Elie Saab",
+    date_line: "Дизайн от Elie Saab",
+    level: "Статус: Завершен",
+    salary: {
+      range: "Вид на залив, эксклюзив",
+      time: "month",
     },
-    {
-        id: "03",
-        job_name: "Marketing Specialist",
-        time: "Full time",
-        location: "Germany, Berlin",
-        date_line: "28 Feb 2024",
-        level: "Expert",
-        salary: {
-            range: "$200",
-            time: "week"
-        },
-        link: "job-details"
+    link: "job-details",
+  },
+  {
+    id: "03",
+    job_name: "MARBELLA, SPAIN",
+    time: "Проект",
+    location: "Tierra Viva by Lamborghini",
+    date_line: "Виллы с дизайном ",
+    level: "Статус: В реализации",
+    salary: {
+      range: "Панорамные виды",
+      time: "week",
     },
-    {
-        id: "04",
-        job_name: "Project Manager",
-        time: "Full time",
-        location: "USA, Cupertino",
-        date_line: "28 Feb 2024",
-        level: "Intermediate",
-        salary: {
-            range: "$3k",
-            time: "month"
-        },
-        link: "job-details"
+    link: "job-details",
+  },
+  {
+    id: "04",
+    job_name: "RIYADH, KSA",
+    time: "Проект",
+    location: "Neptune by Mouawad",
+    date_line: "Дизайн от Mouawad",
+    level: "Статус: В реализации",
+    salary: {
+      range: "Роскошные виллы",
+      time: "month",
     },
-    {
-        id: "05",
-        job_name: "3DS Max expert",
-        time: "Freelance",
-        location: "Remote",
-        date_line: "28 Feb 2024",
-        level: "Expert",
-        salary: {
-            range: "$35 - $40",
-            time: "hour"
-        },
-        link: "job-details"
+    link: "job-details",
+  },
+  {
+    id: "05",
+    job_name: "LONDON, UK",
+    time: "Проект",
+    location: "The Mulliner",
+    date_line: "Историческое здание, люкс",
+    level: "Статус: Завершен",
+    salary: {
+      range: "Рядом с Green Park",
+      time: "hour",
     },
-
-]
+    link: "job-details",
+  },
+];

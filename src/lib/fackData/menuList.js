@@ -45,7 +45,7 @@ export const menuList = [
       {
         id: 5,
         name: "Все проекты",
-        path: "/product-archive",
+        path: "/project-archive",
       },
       {
         id: 8,

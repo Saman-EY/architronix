@@ -61,10 +61,10 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                   style={{ backgroundImage: `url(${project_img})` }}
                 >
                   <div className="flex flex-col sm:flex-row items-center xl:justify-end justify-center -mt-36 xl:-mt-0 5xl:gap-20 3xl:gap-14 sm:gap-10 gap-4 max-w-[1166px] relative z-10 ml-auto pr-7.5">
-                    <h6 className="flex w-full max-w-[11rem]  flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
+                    {/* <h6 className="flex w-full max-w-[11rem]  flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       КЛИЕНТУ:
                       <span className="text-lg font-normal">{client}</span>
-                    </h6>
+                    </h6> */}
 
                     <h6 className="sm:flex  w-full max-w-[11rem] hidden flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       ПЛОЩАДЬ:

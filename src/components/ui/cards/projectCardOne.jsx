@@ -58,15 +58,15 @@ const ProjectCardOne = ({
               <p className="text-secondary-foreground mb-7">{project_desc}</p>
               <ul className="mb-9">
                 <li className="flex  items-center mb-[6px]">
-                  <span className="inline-block font-extrabold min-w-32 text-secondary-foreground">Year:</span>
+                  <span className="inline-block font-extrabold min-w-32 text-secondary-foreground">Готовность:</span>
                   <span className="font-medium text-secondary-foreground">{project_year}</span>
                 </li>
                 <li className="flex  items-center mb-[6px]">
-                  <span className="inline-block font-extrabold min-w-32 text-secondary-foreground">Category:</span>
+                  <span className="inline-block font-extrabold min-w-32 text-secondary-foreground">Тип:</span>
                   <span className="font-medium text-secondary-foreground">{project_type}</span>
                 </li>
                 <li className="flex  items-center mb-[6px]">
-                  <span className="inline-block font-extrabold min-w-32 text-secondary-foreground">Location</span>
+                  <span className="inline-block font-extrabold min-w-32 text-secondary-foreground">Локация:</span>
                   <span className="font-medium text-secondary-foreground">{location}</span>
                 </li>
               </ul>
@@ -76,7 +76,7 @@ const ProjectCardOne = ({
                     "border-secondary text-primary-foreground hover:text-secondary-foreground after:left-0 after:bg-secondary"
                   }
                 >
-                  View Project <RightArrow width={"35"} height={"22"} />
+                  СЛЕДУЮЩИЙ ПРОЕКТ  <RightArrow width={"35"} height={"22"} />
                 </ButtonFill>
               </Link>
             </div>
