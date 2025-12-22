@@ -8,7 +8,7 @@ import Faq from '@/components/section/faq'
 
 export const metadata = {
   title: "Architronix -- Career",
-  description: "Architronix is a next js and tailwind css website",
+  description: "Architronix",
 };
 const Career = () => {
   return (

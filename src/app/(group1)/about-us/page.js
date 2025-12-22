@@ -8,7 +8,7 @@ import { cardSlideAnimation } from "@/lib/utils";
 
 export const metadata = {
   title: "Architronix -- About Us",
-  description: "Architronix is a next js and tailwind css website",
+  description: "Architronix",
 };
 const AboutUs = () => {
   return (
@@ -19,11 +19,11 @@ const AboutUs = () => {
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
-            sectionName={"Team"}
-            sectionTitle={"Architects of Architronix"}
-            sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
-            button_text={"All Architects"}
-            link={"/team"}
+            sectionName={"GULF DOM"}
+            sectionTitle={"АРХИТЕКТОРЫ ПРОЕКТА AIDA"}
+            sectionDesc={"ГДЕ ПРИРОДА ВСТРЕЧАЕТСЯ С РОСКОШЬЮ НА ВЫСОТЕ 130 МЕТРОВ"}
+            button_text={"ВСЕ ОБЪЕКТЫ "}
+            link={"/project-single"}
           />
         </div>
         <div className="container lg:pt-[340px] 2sm:pt-20 pt-14">

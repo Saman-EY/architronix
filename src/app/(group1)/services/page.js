@@ -11,7 +11,7 @@ import Feedback from "@/components/section/feedback";
 
 export const metadata = {
   title: "Architronix -- Services",
-  description: "Architronix is a next js and tailwind css website",
+  description: "Architronix",
 };
 
 const Services = () => {

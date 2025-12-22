@@ -21,7 +21,7 @@ const BannerThree = () => {
           // poster="/videos/hero-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/heroVid.mp4" type="video/mp4" />
+          <source src="/landingVid.mp4" type="video/mp4" />
         </video>
         <div className="container">
           <div className="absolute top-1/2 -translate-y-1/2">

@@ -10,7 +10,7 @@ import {
 
 export const metadata = {
   title: "Architronix -- Product Archive",
-  description: "Architronix is a next js and tailwind css website",
+  description: "Architronix",
 };
 
 const ProjectArchive = () => {

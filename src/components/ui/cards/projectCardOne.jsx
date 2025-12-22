@@ -39,7 +39,7 @@ const ProjectCardOne = ({
                   alt="project-img-1"
                   width={1000}
                   height={1000}
-                  className=" h-full"
+                  className="h-[400px] object-cover md:h-full"
                 />
               </motion.div>
             </div>
@@ -76,7 +76,7 @@ const ProjectCardOne = ({
                     "border-secondary text-primary-foreground hover:text-secondary-foreground after:left-0 after:bg-secondary"
                   }
                 >
-                  СЛЕДУЮЩИЙ ПРОЕКТ  <RightArrow width={"35"} height={"22"} />
+                  СЛЕДУЮЩИЙ ПРОЕКТ <RightArrow width={"35"} height={"22"} />
                 </ButtonFill>
               </Link>
             </div>

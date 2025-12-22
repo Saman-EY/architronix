@@ -39,13 +39,14 @@ const AboutOne = ({ text_muted, bg_muted }) => {
           text_muted={text_muted}
           bg_muted={bg_muted}
         />
-        <div className={cn(`bg-primary xl:mt-[220px] lg:mt-25  md:mt-44 mt-[540px] xl:mb-20 mb-0 ${bg_muted}`)}>
+        <div className={cn(`bg-primary xl:mt-[220px] lg:mt-25  md:mt-44 mt-40 bg-black xl:mb-20 mb-0 ${bg_muted}`)}>
           <div className="container">
             <div className="flex lg:flex-row flex-col items-center gap-[66px]">
               <SectionSidebarImg
                 img={"/optionsBanner.jpg"}
                 section_name={"about-bg"}
-                className="sm:-mt-25 mt-5 -mb-25"
+                className="sm:-mt-25 mt-5 -mb-25 "
+                imgClass={"h-full"}
               />
               <ul className="lg:mt-0 mt-20 lg:pb-0 pb-10">
                 {aboutList.map(({ id, item, item_desc }) => {

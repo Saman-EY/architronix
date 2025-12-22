@@ -13,7 +13,7 @@ import Title from "@/components/ui/title";
 
 export const metadata = {
   title: "Architronix -- Project Single",
-  description: "Architronix is a next js and tailwind css website",
+  description: "Architronix",
 };
 
 const ProjectSingle = () => {
@@ -79,22 +79,20 @@ const ProjectSingle = () => {
           <div className="container-fluid mt-30">
             <div className="flex lg:flex-row flex-col gap-8">
               <Image
-                src={project_img_1}
+                src={"/career1.PNG"}
                 loading="lazy"
-                placeholder="blur"
-                width={"auto"}
-                height={"auto"}
+                width={"700"}
+                height={"700"}
                 alt="img"
-                className="w-full h-full"
+                className="w-full md:w-[40%] h-[700px] object-cover"
               />
               <Image
-                src={project_img_2}
+                src={"/house4.JPG"}
                 loading="lazy"
-                placeholder="blur"
-                width={"auto"}
-                height={"auto"}
+                width={"700"}
+                height={"700"}
                 alt="img"
-                className="w-full h-full"
+                className="w-full md:w-[60%] h-[700px] object-cover"
               />
             </div>
           </div>

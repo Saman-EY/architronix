@@ -10,7 +10,7 @@ export const jobPostList = [
       range: "В партнерстве с Trump Org.",
       time: "year",
     },
-    link: "job-details",
+    link: "services",
   },
   {
     id: "02",
@@ -23,7 +23,7 @@ export const jobPostList = [
       range: "Вид на залив, эксклюзив",
       time: "month",
     },
-    link: "job-details",
+    link: "services",
   },
   {
     id: "03",
@@ -36,7 +36,7 @@ export const jobPostList = [
       range: "Панорамные виды",
       time: "week",
     },
-    link: "job-details",
+    link: "services",
   },
   {
     id: "04",
@@ -49,7 +49,7 @@ export const jobPostList = [
       range: "Роскошные виллы",
       time: "month",
     },
-    link: "job-details",
+    link: "services",
   },
   {
     id: "05",
@@ -62,6 +62,6 @@ export const jobPostList = [
       range: "Рядом с Green Park",
       time: "hour",
     },
-    link: "job-details",
+    link: "services",
   },
 ];

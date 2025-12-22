@@ -6,7 +6,7 @@ const TeamCardTwo = ({ img, name, link, position, desc }) => {
   return (
     <div className="flex lg:flex-row flex-col gap-[34px] items-center">
       <Link href={link} className="w-full h-full lg:min-w-52">
-        <SectionSidebarImg img={img} section_name={"team"} className={"w-full h-full"} />
+        <SectionSidebarImg  img={img} section_name={"team"} className={"w-full h-full"} />
       </Link>
       <div>
         <Link href={link} className="text-2xl font-bold leading-160 text-primary-foreground hover-underline">

@@ -20,7 +20,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "Architronix",
-  description: "Architronix is a next js and tailwind css website",
+  description: "Architronix",
   icons: {
     icon: `${favicon.src}`,
   },
