@@ -44,7 +44,7 @@ const Faq = ({ className }) => {
       <div className="container lg:pt-30 2sm:pt-20 pt-14">
         <div className="grid lg:grid-cols-[40%_auto] items-center gap-17.5">
           <div>
-            <SectionSidebarImg img={faq_img} section_name={"faq-background"} />
+            <SectionSidebarImg img={"/qa-img.jpg"} section_name={"faq-background"} />
           </div>
 
           <div>

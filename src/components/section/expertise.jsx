@@ -42,7 +42,7 @@ const Expertise = () => {
         <div className="lg:mt-30 2sm:mt-20 mt-14 bg-secondary">
           <div className="flex lg:flex-row flex-col items-center gap-15 ">
             <div>
-              <SectionSidebarImg img={expertise_bg} section_name={"Expertise-bg"} className={"w-full h-full"} />
+              <SectionSidebarImg img={"/service-detail.jpg"} section_name={"Expertise-bg"} className={"w-full h-full"} />
             </div>
             <div className="px-3 2xl:py-0 py-7 max-w-[609px] w-full">
               <Title title_text={"НАША ЭКСПЕРТИЗА"} className={"2xl:mb-20 mb-14"} />

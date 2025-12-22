@@ -19,7 +19,8 @@ const Services = () => {
     <>
       <section
         className='bg-cover bg-no-repeat bg-center relative z-[1] after:contents-[""] after:z-[-1] after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[#d2e0d9a6] pt-20 pb-30'
-        style={{ backgroundImage: `url(${section_bg.src})` }}
+        // style={{ backgroundImage: `url(${section_bg.src})` }}
+        style={{ backgroundImage: `url("/service-top.jpg")` }}
       >
         <div className="container-fluid ">
           <SectionTitle

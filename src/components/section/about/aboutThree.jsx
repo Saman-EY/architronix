@@ -42,7 +42,7 @@ const AboutThree = () => {
           <div className="container">
             <div className="flex lg:flex-row flex-col items-center justify-between gap-[66px]">
               <div className="2xl:-mt-25 md:mt-4 -mt-[470px]">
-                <SectionSidebarImg img={about_bg} section_name={"about-bg"} />
+                <SectionSidebarImg img={"/about.jpg"} section_name={"about-bg"} />
               </div>
               <div className="max-w-[650px] lg:pb-0 pb-10">
                 <h2 className="text-secondary-foreground lg:text-5xl text-[27px] font-bold leading-120 max-w-[500px]">

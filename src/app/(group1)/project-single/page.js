@@ -21,7 +21,7 @@ const ProjectSingle = () => {
     <>
       <section className="blog-single">
         <div>
-          <Image src={bg_banner} loading="lazy" placeholder="blur" alt="img" />
+          <Image className="w-full object-cover" src={"/single-banner.PNG"} width={1000} height={1000} alt="img" />
           <div className="container 2sm:mt-[156px] sm:mt-30 mt-20">
             <div className="grid lg:grid-cols-[65%_auto] gap-[38px]">
               <div className="relative after:absolute sm:after:-left-12.5 after:-left-5 after:top-1/2 after:-translate-y-1/2 after:w-[1px] sm:after:h-[130%] after:h-[120%] after:bg-primary sm:ml-12.5 ml-5">
@@ -65,7 +65,7 @@ const ProjectSingle = () => {
                 </ul>
                 <ButtonOutline
                   className={
-                    "text-secondary-foreground border-secondary whitespace-nowrap hover:text-primary-foreground hover:bg-secondary "
+                    "text-secondary-foreground px-5 border-secondary text-sm sm:text-xl whitespace-nowrap hover:text-primary-foreground hover:bg-secondary "
                   }
                 >
                   Ключевые характеристики{" "}

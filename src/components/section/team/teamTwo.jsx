@@ -1,19 +1,13 @@
 import React from "react";
 import SectionTitle from "../../ui/sectionTitle";
 import TeamCardTwo from "../../ui/cards/teamCardTwo";
-import team_13 from "@/assets/images/team-13.jpg";
-import team_14 from "@/assets/images/team-14.jpg";
-import team_15 from "@/assets/images/team-15.jpg";
-import team_16 from "@/assets/images/team-16.jpg";
 
-import credit_image_1 from "@/assets/images/credit-image-1.jpg";
-import credit_image_2 from "@/assets/images/credit-image-2.jpg";
 import TeamCardThree from "../../ui/cards/teamCardThree";
 
 const temaList = [
   {
     id: 1,
-    img: team_13,
+    img: "/member1.jpg",
     link: "/team-single",
     name: "TRUMP ORGANIZATION",
     position: "Эксклюзивный оператор",
@@ -21,7 +15,7 @@ const temaList = [
   },
   {
     id: 2,
-    img: team_14,
+    img: "/member2.jpg",
     link: "/team-single",
     name: "MARRIOTT INTERNATIONAL",
     position: "Управляющий партнер",
@@ -29,7 +23,7 @@ const temaList = [
   },
   {
     id: 3,
-    img: team_15,
+    img: "/member3.jpg",
     link: "/team-single",
     name: " DAR GLOBAL",
     position: "Девелопер проекта",
@@ -37,7 +31,7 @@ const temaList = [
   },
   {
     id: 4,
-    img: team_16,
+    img: "/member4.jpg",
     link: "/team-single",
     name: "ПРАВИТЕЛЬСТВО ОМАНА",
     position: "Стратегический партнер",
@@ -45,7 +39,7 @@ const temaList = [
   },
   {
     id: 5,
-    img: credit_image_1,
+    img: "/car1.jpg",
     link: "/team-single",
     name: "AUTOMOBILI LAMBORGHINI",
     position: "Партнер по дизайну",
@@ -53,7 +47,7 @@ const temaList = [
   },
   {
     id: 6,
-    img: credit_image_2,
+    img: "/car2.jpg",
     link: "/team-single",
     name: "PAGANI AUTOMOBILI",
     position: "Партнер по дизайну интерьеров",
@@ -81,7 +75,7 @@ const TeamTwo = () => {
       {/* ----  Other Credits */}
       <div className="container pt-30">
         <div className="relative after:absolute after:xl:-left-12.5 after:-left-7 after:top-1/2 after:-translate-y-1/2 after:w-[1px] after:h-[130%] after:bg-primary xl:ml-12.5 ml-7">
-          <h1 className="xl:text-[130px] lg:text-8xl 2sm:text-7xl text-5xl font-extrabold leading-110 text-primary-foreground">
+          <h1 className="xl:text-[130px] lg:text-8xl 2sm:text-7xl text-3xl font-extrabold leading-110 text-primary-foreground">
             ЭКСКЛЮЗИВНЫЕ <br /> БРЕНДЫ
           </h1>
         </div>

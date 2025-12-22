@@ -12,7 +12,7 @@ const SectionSidebarImg = ({ img, section_name, className }) => {
       viewport={{ once: true, amount: 0.2 }}
       className={className}
     >
-      <Image className="rounded" src={img} loading="lazy"  width={700} height={700} alt={section_name} />
+      <Image className="rounded h-[230px] object-cover" src={img} loading="lazy" width={700} height={700} alt={section_name} />
     </motion.div>
   );
 };
