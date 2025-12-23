@@ -39,7 +39,7 @@ const ProjectCardOne = ({
                   alt="project-img-1"
                   width={1000}
                   height={1000}
-                  className="h-[400px] object-cover md:h-full"
+                  className="h-[600px] object-cover"
                 />
               </motion.div>
             </div>

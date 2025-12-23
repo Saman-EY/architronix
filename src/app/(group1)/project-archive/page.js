@@ -9,8 +9,8 @@ import {
 } from "@/lib/utils";
 
 export const metadata = {
-  title: "Architronix -- Product Archive",
-  description: "Architronix",
+  title: "GULF DOM -- Product Archive",
+  description: "GULF DOM",
 };
 
 const ProjectArchive = () => {

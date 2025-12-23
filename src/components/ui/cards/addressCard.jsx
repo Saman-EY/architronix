@@ -20,7 +20,7 @@ const AddressCard = ({ id, address, company, country, email, phone, lat_lng }) =
                 <Link href={`mailto:${email}`} className='hover-underline inline-block'><b className='font-normal'>Email: </b><span>{email}</span></Link>
             </div>
             <p onClick={()=>setMapDirection(lat_lng)} className='inline-flex items-center gap-3 text-xl font-bold cursor-pointer relative after:contents=[""] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary '>
-                View on Map
+                Перейти на сайт: GulfDom.ru
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="21" viewBox="0 0 35 21" fill="none">
                     <path d="M24 19.5L33 10.4999L24 1.5" stroke="#253B2F" strokeWidth="2" strokeLinecap="square" />
                     <path d="M1 10.5L32 10.5" stroke="#253B2F" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />

@@ -43,6 +43,7 @@ const TeamCardOne = ({ img, social_link, name, position, text_muted, cardVariant
             width={700}
             height={700}
             alt={name}
+            style={{maxHeight: "500px"}}
             className="w-full min-h-[440px] object-cover block"
           />
         </div>

@@ -19,8 +19,8 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Architronix",
-  description: "Architronix",
+  title: "GULF DOM",
+  description: "GULF DOM",
   icons: {
     icon: `${favicon.src}`,
   },

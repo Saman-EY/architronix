@@ -1,6 +1,4 @@
-import team_1 from "@/assets/images/team-1.jpg";
-import team_2 from "@/assets/images/team-2.jpg";
-import team_3 from "@/assets/images/team-3.jpg";
+
 import team_4 from "@/assets/images/team-4.jpg";
 import team_5 from "@/assets/images/team-5.jpg";
 import team_6 from "@/assets/images/team-6.jpg";
@@ -195,9 +193,9 @@ export const teamData = [
   },
   {
     id: 4,
-    img: team_9,
-    name: "Victoria Savano",
-    position: "Interior Alchemist",
+    img: "/team1.jpg",
+    name: "МЕНЕДЖЕР ПРОЕКТОВ TRUMP",
+    position: "Специализация: объекты под управлением бренда Trump",
     social_link: [
       {
         id: 1,
@@ -255,9 +253,9 @@ export const teamData = [
   },
   {
     id: 5,
-    img: team_4,
-    name: "Russell Otten",
-    position: "Interior Alchemist",
+    img: "/team2.jpg",
+    name: "ЭКСПЕРТ ПО ИНВЕСТИЦИЯМ В ОАЭ",
+    position: "Специализация: Дубай, Абу-Даби, Рас-эль-Хайма",
     social_link: [
       {
         id: 1,
@@ -315,9 +313,9 @@ export const teamData = [
   },
   {
     id: 6,
-    img: team_5,
-    name: "Russell Otten",
-    position: "Interior Alchemist",
+    img: "/team3.jpg",
+    name: " СПЕЦИАЛИСТ ПО ВИЗАМ И РЕЗИДЕНЦИИ",
+    position: "Специализация: Golden Visa, ПМЖ в Омане и ОАЭ",
     social_link: [
       {
         id: 1,
@@ -375,9 +373,9 @@ export const teamData = [
   },
   {
     id: 7,
-    img: team_6,
-    name: "Russell Otten",
-    position: "Interior Alchemist",
+    img: "/team4.jpg",
+    name: "АНАЛИТИК РЫНКА НЕДВИЖИМОСТИ",
+    position: "Специализация: тренды, прогнозы, оценка объектов",
     social_link: [
       {
         id: 1,
@@ -435,9 +433,9 @@ export const teamData = [
   },
   {
     id: 8,
-    img: team_7,
-    name: "Russell Otten",
-    position: "Interior Alchemist",
+    img: "/team5.jpg",
+    name: "КОНСЬЕРЖ-СЕРВИС",
+    position: "Специализация: полное сопровождение клиентов",
     social_link: [
       {
         id: 1,
@@ -495,9 +493,9 @@ export const teamData = [
   },
   {
     id: 9,
-    img: team_8,
-    name: "Brett Lee",
-    position: "Interior Alchemist",
+    img: "/member3.jpg",
+    name: "МЕНЕДЖЕР ПО РАБОТЕ С ПАРТНЕРАМИ",
+    position: "Специализация: сотрудничество с девелоперами",
     social_link: [
       {
         id: 1,

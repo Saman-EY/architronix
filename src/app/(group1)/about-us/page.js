@@ -7,8 +7,8 @@ import { teamData } from "@/lib/fackData/teamData";
 import { cardSlideAnimation } from "@/lib/utils";
 
 export const metadata = {
-  title: "Architronix -- About Us",
-  description: "Architronix",
+  title: "GULF DOM -- About Us",
+  description: "GULF DOM",
 };
 const AboutUs = () => {
   return (

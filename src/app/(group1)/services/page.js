@@ -10,8 +10,8 @@ import Faq from "@/components/section/faq";
 import Feedback from "@/components/section/feedback";
 
 export const metadata = {
-  title: "Architronix -- Services",
-  description: "Architronix",
+  title: "GULF DOM -- Services",
+  description: "GULF DOM",
 };
 
 const Services = () => {

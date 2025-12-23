@@ -39,7 +39,7 @@ const MobileNavbar = () => {
         <div className="container-fluid ">
           <div className="flex items-center justify-between py-4">
             <Link href={"/"} className="text-primary-foreground">
-              <Logo height={"31"} width={"219"} />
+              <span className="text-primary font-bold text-4xl">GULF DOM</span>
             </Link>
             <div>
               <nav
@@ -49,7 +49,7 @@ const MobileNavbar = () => {
               >
                 <div className="flex justify-between items-center">
                   <Link href={"/"} className="text-primary-foreground">
-                    <Logo height={"31"} width={"219"} />
+                    <span className="text-primary font-bold text-4xl">GULF DOM</span>
                   </Link>
                   <div onClick={() => setIsMenuActive(false)}>
                     <IoMdClose className="text-2xl cursor-pointer" />
@@ -139,7 +139,6 @@ const MobileNavbar = () => {
                       </li>
                     );
                   })}
-               
                 </ul>
               </nav>
               <div className="text-primary-foreground" onClick={() => setIsMenuActive(true)}>

@@ -29,7 +29,7 @@ const BottomNavbar = ({ linkColor }) => {
       <div className="bottom-navbar flex justify-between items-center">
         <div>
           <Link href="/" className={cn(`logo text-primary-foreground ${linkColor}`)}>
-            <Logo height={"31"} width={"219"} />
+            <span className=" font-bold text-4xl">GULF DOM</span>
           </Link>
         </div>
         <nav>
@@ -66,7 +66,6 @@ const BottomNavbar = ({ linkColor }) => {
                 </li>
               );
             })}
-          
           </ul>
         </nav>
       </div>

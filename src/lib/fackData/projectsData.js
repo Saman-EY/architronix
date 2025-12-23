@@ -4,7 +4,7 @@ export const projectsData = [
   {
     id: 1,
     project_name: "TRUMP INTERNATIONAL HOTEL",
-    project_img: "/house1.PNG",
+    project_img: "/house1.jpg",
     project_desc: "Инвестируйте в номер или люкс в пятизвездочном отеле. Получайте доход от управляющей компании Trump и пользуйтесь 2 неделями личного отдыха ежегодно.",
     client: "",
     area: "45-107 м²",
@@ -16,7 +16,7 @@ export const projectsData = [
   {
     id: 2,
     project_name: "MARRIOTT RESIDENCES",
-    project_img: "/house2.PNG",
+    project_img: "/house2.jpg",
     project_desc: "Полностью меблированные апартаменты с 1-3 спальнями. Управление и сервис по стандартам Marriott International.",
     client: "",
     area: "67-134 м²",
@@ -28,7 +28,7 @@ export const projectsData = [
   {
     id: 3,
     project_name: "TRUMP GOLF VILLAS",
-    project_img: "/house3.JPG",
+    project_img: "/house3.jpg",
     project_desc: "Эксклюзивные 5-спаленные виллы на поле для гольфа с личным гольф-каром. Управление от Trump Hotels.",
     client: "",
     area: "250-400 м²",
@@ -40,7 +40,7 @@ export const projectsData = [
   {
     id: 4,
     project_name: "THE GREAT ESCAPE RESIDENCES",
-    project_img: "/house4.JPG",
+    project_img: "/house4.jpg",
     project_desc:
       "Апартаменты с 1-3 спальнями, вдохновленные природой. Панорамные виды на океан, долину и гольф-поле.",
     client: "",

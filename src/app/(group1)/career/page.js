@@ -7,8 +7,8 @@ import AboutThree from '@/components/section/about/aboutThree'
 import Faq from '@/components/section/faq'
 
 export const metadata = {
-  title: "Architronix -- Career",
-  description: "Architronix",
+  title: "GULF DOM -- Career",
+  description: "GULF DOM",
 };
 const Career = () => {
   return (

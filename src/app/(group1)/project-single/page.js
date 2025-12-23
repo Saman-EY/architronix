@@ -12,8 +12,8 @@ import ButtonOutline from "@/components/ui/buttons/buttonOutline";
 import Title from "@/components/ui/title";
 
 export const metadata = {
-  title: "Architronix -- Project Single",
-  description: "Architronix",
+  title: "GULF DOM -- Project Single",
+  description: "GULF DOM",
 };
 
 const ProjectSingle = () => {
