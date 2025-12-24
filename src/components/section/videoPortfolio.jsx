@@ -4,6 +4,7 @@ import SectionTitle from "../ui/sectionTitle";
 import { cn } from "@/lib/utils";
 import ButtonOutline from "../ui/buttons/buttonOutline";
 import VideoSec from "./VideoSec";
+import VideoPlay from "../ui/videoPlay";
 
 const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
   return (
@@ -60,8 +61,8 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                 </ButtonOutline>
               </Link>
             </div>
-            {/* <VideoPlay img={video_thumb} /> */}
-            <VideoSec />
+            <VideoPlay img={"/startOFvid.png"} />
+            {/* <VideoSec /> */}
           </div>
         </div>
       </div>

@@ -23,20 +23,30 @@ const VideoPlay = ({ img }) => {
         <Image
           src={img}
           loading="lazy"
-          placeholder="blur"
           alt="video"
-          width={"auto"}
-          height={"auto"}
-          className="w-full max-w-[698px] mx-auto h-full"
+          width={500}
+          height={500}
+          className="w-full max-w-[698px] mx-auto h-full object-cover"
         />
-        <ModalVideo
-          channel="youtube"
-          youtube={{ mute: 0, autoplay: 0 }}
-          isOpen={isOpen}
-          videoId="lfDZJqSrIuk"
-          onClose={() => setOpen(false)}
-          
-        />
+        {isOpen && (
+          <div
+            onClick={() => setOpen(false)}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+          >
+            <div
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-3xl bg-black rounded-lg overflow-hidden"
+            >
+              {/* Close button */}
+              <button onClick={() => setOpen(false)} className="absolute top-3 right-3 z-10 text-white text-xl">
+                ✕
+              </button>
+
+              {/* Local video */}
+              <video src="/modalVid.MOV" controls autoPlay className="w-full h-auto" />
+            </div>
+          </div>
+        )}
 
         <div
           onClick={() => setOpen(true)}
