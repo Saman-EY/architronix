@@ -30,7 +30,7 @@ const BannerThree = () => {
               <br />
               <TextTyped text={["ИЗЫСКАННОСТЬ", "СОВЕРШЕНСТВО", "РОСКОШЬ", "ПРЕСТИЖ"]} />
             </h1>
-            <Link href={"/about-us"} className="mt-16 inline-block">
+            <Link href={"/project-archive"} className="mt-16 inline-block">
               <ButtonFill
                 className={`sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground`}
               >

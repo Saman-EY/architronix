@@ -13,11 +13,11 @@ const AboutTwo = () => {
           sectionTitle={"Наша история"}
           sectionDesc={"Открывая мир роскошной недвижимости"}
         />
-        <div className={`bg-primary xl:mt-[220px] lg:mt-25 md:mt-44 mt-[540px] xl:mb-20 mb-0`}>
+        <div className={`bg-primary xl:mt-[220px] lg:mt-25 md:mt-44 mt-[240px] xl:mb-20 mb-0`}>
           <div className="container">
             <div className="flex lg:flex-row flex-col items-center justify-between gap-[66px]">
-              <div className="md:-mt-25 -mt-[470px] -mb-25">
-                <SectionSidebarImg imgClass={"h-full "} img={about_bg} section_name={"about-bg"} />
+              <div className="md:-mt-25 -mt-[170px] -mb-25">
+                <SectionSidebarImg imgClass={"h-full"} img={"/team5.jpg"} section_name={"about-bg"} />
               </div>
               <div className="max-w-[533px] lg:pt-0 pt-20 lg:pb-0 pb-10">
                 <h2 className="text-secondary-foreground text-3xl 2sm:text-4xl font-bold leading-120 mb-14 max-w-[400px]">

@@ -55,7 +55,7 @@ const ProjectSingleSliderTwo = () => {
                   height={500}
                   blurDataURL={staticBluarDataUrl}
                   alt="img"
-                  className="w-full h-full max-h-[720px] object-cover"
+                  className="w-full  max-h-[720px] h-[400px] object-cover"
                 />
               </SwiperSlide>
             );
@@ -109,7 +109,7 @@ const ProjectSingleSliderTwo = () => {
                 alt="img"
                 width={500}
                 height={500}
-                className="w-full lg:min-h-[250px] object-cover min-h-[100px] max-h-[100px] h-full "
+                className="w-full object-cover h-[200px]  "
               />
             </SwiperSlide>
           );

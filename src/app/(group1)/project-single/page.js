@@ -87,7 +87,7 @@ const ProjectSingle = () => {
                 className="w-full md:w-[40%] h-[700px] object-cover"
               />
               <Image
-                src={"/house4.JPG"}
+                src={"/house4.jpg"}
                 loading="lazy"
                 width={"700"}
                 height={"700"}

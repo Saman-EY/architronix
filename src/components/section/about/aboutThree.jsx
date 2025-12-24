@@ -38,7 +38,7 @@ const AboutThree = () => {
           sectionTitle={"НАШИ ЭКСКЛЮЗИВНЫЕ УСЛОВИЯ"}
           sectionDesc={"ЭКСКЛЮЗИВНЫЙ ДОСТУП К ЦЕНАМ ЗАСТРОЙЩИКА ИПЕРСОНАЛЬНЫЙ СЕРВИС НА ВСЕХ ЭТАПАХ"}
         />
-        <div className={`bg-primary 2xl:mt-[220px] lg:mt-25 md:mt-44 mt-[520px] `}>
+        <div className={`bg-primary 2xl:mt-[220px] lg:mt-25 md:mt-44 mt-5 `}>
           <div className="container">
             <div className="flex lg:flex-row flex-col items-center justify-between gap-[66px]">
               <div className="2xl:-mt-25 md:mt-4 ">
