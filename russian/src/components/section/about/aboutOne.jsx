@@ -39,7 +39,7 @@ const AboutOne = ({ text_muted, bg_muted }) => {
           text_muted={text_muted}
           bg_muted={bg_muted}
         />
-        <div className={cn(`bg-primary xl:mt-[220px] lg:mt-25  md:mt-44 mt-40 bg-black xl:mb-20 mb-0 ${bg_muted}`)}>
+        <div className={cn(`bg-primary xl:mt-[220px] lg:mt-25  md:mt-44 mt-40  xl:mb-20 mb-0 ${bg_muted}`)}>
           <div className="container">
             <div className="flex lg:flex-row flex-col items-center gap-[66px]">
               <SectionSidebarImg

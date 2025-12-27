@@ -43,7 +43,7 @@ const VideoPlay = ({ img }) => {
               </button>
 
               {/* Local video */}
-              <video src="/modalVid.MOV" controls autoPlay className="w-full h-auto" />
+              <video src="/modalVid.MP4" controls autoPlay className="w-full h-auto" />
             </div>
           </div>
         )}
