@@ -15,11 +15,15 @@ const HeaderTwo = () => {
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
   useEffect(() => {
-    const hasSubmitted = localStorage.getItem(SUBMITTED_KEY);
+    const timer = setTimeout(() => {
+      const hasSubmitted = localStorage.getItem(SUBMITTED_KEY);
 
-    if (!hasSubmitted) {
-      dispatch(setModalRdx(true));
-    }
+      if (!hasSubmitted) {
+        dispatch(setModalRdx(true));
+      }
+    }, 8000); // 8 seconds
+
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   return (

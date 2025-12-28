@@ -90,12 +90,11 @@ function DetailsModal() {
           <Image className="w-full object-cover h-[180px]" width={500} height={500} src={"/topFooter.JPG"} alt="" />
 
           <div className="flex flex-col gap-3">
-            <h6 className="text-xl text-center mt-3 font-semibold">ПЛАН ОПЛАТЫ</h6>
-            <div>
-              <PaymentCard desc={"Сейчас"} price={"20%"} title={"ВЗНОС"} />
-            </div>
+            <h6 className="text-xl text-center mt-3 font-semibold">Скачать брошюру</h6>
 
             <div className="grid grid-cols-2 gap-4">
+              <PaymentCard desc={""} price={"100%"} title={"ГАРАНТИЯ БАНКА ОМАНА"} />
+              <PaymentCard desc={"Сейчас"} price={"20%"} title={"ВЗНОС"} />
               <PaymentCard desc={"6 мес."} price={"10%"} title={"1-Й ПЛАТЁЖ"} />
               <PaymentCard desc={"12 мес."} price={"10%"} title={"2-Й ПЛАТЁЖ"} />
               <PaymentCard desc={"24 мес."} price={"10%"} title={"3-Й ПЛАТЁЖ"} />
@@ -149,7 +148,7 @@ function DetailsModal() {
           onClick={handleSubmit}
           className="px-6 py-2 text-white hover:bg-black/80 transition-all text-sm md:text-base bg-black mt-auto rounded"
         >
-          Submit And Download Brochure
+          Скачать брошюру
         </button>
       </motion.div>
     </section>
@@ -162,8 +161,8 @@ const PaymentCard = ({ title, price, desc }) => {
   return (
     <div className="bg-white p-3 flex flex-col justify-center items-center">
       <div className="flex items-center gap-1 flex-wrap justify-center">
-        <h6 className="text-xl text-center">{price}</h6>
-        <span className="text-base text-center">{title}</span>
+        <h6 className="text-lg text-center">{price}</h6>
+        <span className="text-sm text-center">{title}</span>
       </div>
       <span className="text-xs text-slate-400 text-center">{desc}</span>
     </div>
