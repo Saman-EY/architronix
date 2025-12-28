@@ -90,15 +90,14 @@ function DetailsModal() {
           <Image className="w-full object-cover h-[200px]" width={500} height={500} src={"/topFooter.JPG"} alt="" />
 
           <div className="flex flex-col gap-3">
-            <h6 className="text-xl text-center mt-3 font-semibold">PAYMENT PLAN</h6>
-            <div>
-              <PaymentCard title={"DOWNPAYMENT"} price={"20%"} desc={"IMMEDIATE"} />
-            </div>
+            <h6 className="text-xl text-center mt-3 font-semibold">ПЛАН ОПЛАТЫ</h6>
+
             <div className="grid grid-cols-2 gap-4">
-              <PaymentCard desc={"After 6 months from Booking Date"} price={"10%"} title={"1 INSTALLMENT"} />
-              <PaymentCard desc={"After 12 months from Booking Date"} price={"10%"} title={"2 INSTALLMENT"} />
-              <PaymentCard desc={"After 24 months from Booking Date"} price={"10%"} title={"3 INSTALLMENT"} />
-              <PaymentCard desc={"On project completion"} price={"50%"} title={"FINAL INSTALLMENT"} />
+              <PaymentCard desc={"Сейчас"} price={"20%"} title={"ВЗНОС"} />
+              <PaymentCard desc={"6 мес."} price={"10%"} title={"1-Й ПЛАТЁЖ"} />
+              <PaymentCard desc={"12 мес."} price={"10%"} title={"2-Й ПЛАТЁЖ"} />
+              <PaymentCard desc={"24 мес."} price={"10%"} title={"3-Й ПЛАТЁЖ"} />
+              <PaymentCard desc={"При готовности"} price={"50%"} title={"ФИНАЛЬНЫЙ"} />
             </div>
           </div>
         </section>
@@ -160,8 +159,11 @@ export default DetailsModal;
 const PaymentCard = ({ title, price, desc }) => {
   return (
     <div className="bg-white p-3 flex flex-col justify-center items-center">
-      <h6 className="text-3xl">{price}</h6>
-      <span className="text-sm">{title}</span>
+      <div className="flex items-center gap-1 flex-wrap justify-center">
+        <h6 className="text-xl text-center">{price}</h6>
+        <span> - </span>
+        <span className="text-base text-center">{title}</span>
+      </div>
       <span className="text-xs text-slate-400 text-center">{desc}</span>
     </div>
   );
