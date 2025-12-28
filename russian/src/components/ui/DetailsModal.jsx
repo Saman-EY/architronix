@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { setModalRdx } from "@/redux/others";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { publicApi } from "@/lib/api";
 import Image from "next/image";
@@ -12,6 +12,7 @@ function DetailsModal() {
   const [fullname, setFullname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const { detailModal } = useSelector((state) => state.othersRdx);
 
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
@@ -54,6 +55,18 @@ function DetailsModal() {
     }
   };
 
+  useEffect(() => {
+    if (detailModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [detailModal]);
+
   return (
     <section className="px-5">
       <motion.div
@@ -64,7 +77,7 @@ function DetailsModal() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed top-1/2  left-1/2 -translate-y-1/2 rounded-md -translate-x-1/2 w-full max-w-[90%] md:max-w-[500px]  bg-slate-100 z-[105] flex flex-col gap-3 p-5"
+        className="fixed top-1/2  left-1/2 -translate-y-1/2 rounded-md -translate-x-1/2 w-full max-w-[90%] md:max-w-[500px] max-h-[90%] overflow-auto  bg-slate-100 z-[105] flex flex-col gap-3 p-5"
       >
         <button
           onClick={() => dispatch(setModalRdx(false))}
@@ -149,7 +162,7 @@ const PaymentCard = ({ title, price, desc }) => {
     <div className="bg-white p-3 flex flex-col justify-center items-center">
       <h6 className="text-3xl">{price}</h6>
       <span className="text-sm">{title}</span>
-      <span className="text-xs text-slate-400">{desc}</span>
+      <span className="text-xs text-slate-400 text-center">{desc}</span>
     </div>
   );
 };
