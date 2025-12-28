@@ -77,7 +77,7 @@ function DetailsModal() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed top-1/2  left-1/2 -translate-y-1/2 rounded-md -translate-x-1/2 w-full max-w-[90%] md:max-w-[500px] max-h-[90%] overflow-auto  bg-slate-100 z-[105] flex flex-col gap-3 p-5"
+        className="fixed top-1/2  left-1/2 -translate-y-1/2 rounded-md -translate-x-1/2 w-full max-w-[90%] md:max-w-[500px] max-h-[95%] overflow-auto  bg-slate-100 z-[105] flex flex-col gap-3 p-5"
       >
         <button
           onClick={() => dispatch(setModalRdx(false))}
@@ -87,13 +87,15 @@ function DetailsModal() {
         </button>
 
         <section className="">
-          <Image className="w-full object-cover h-[200px]" width={500} height={500} src={"/topFooter.JPG"} alt="" />
+          <Image className="w-full object-cover h-[180px]" width={500} height={500} src={"/topFooter.JPG"} alt="" />
 
           <div className="flex flex-col gap-3">
             <h6 className="text-xl text-center mt-3 font-semibold">ПЛАН ОПЛАТЫ</h6>
+            <div>
+              <PaymentCard desc={"Сейчас"} price={"20%"} title={"ВЗНОС"} />
+            </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <PaymentCard desc={"Сейчас"} price={"20%"} title={"ВЗНОС"} />
               <PaymentCard desc={"6 мес."} price={"10%"} title={"1-Й ПЛАТЁЖ"} />
               <PaymentCard desc={"12 мес."} price={"10%"} title={"2-Й ПЛАТЁЖ"} />
               <PaymentCard desc={"24 мес."} price={"10%"} title={"3-Й ПЛАТЁЖ"} />
@@ -161,7 +163,6 @@ const PaymentCard = ({ title, price, desc }) => {
     <div className="bg-white p-3 flex flex-col justify-center items-center">
       <div className="flex items-center gap-1 flex-wrap justify-center">
         <h6 className="text-xl text-center">{price}</h6>
-        <span> - </span>
         <span className="text-base text-center">{title}</span>
       </div>
       <span className="text-xs text-slate-400 text-center">{desc}</span>
