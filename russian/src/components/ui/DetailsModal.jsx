@@ -13,6 +13,7 @@ function DetailsModal() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const { detailModal } = useSelector((state) => state.othersRdx);
+  const [loading, setLoading] = useState(false);
 
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
@@ -31,6 +32,7 @@ function DetailsModal() {
     }
 
     try {
+      setLoading(true);
       const body = {
         fullname,
         phone,
@@ -42,7 +44,15 @@ function DetailsModal() {
       toast.success("Your details were submitted successfully ✅");
       localStorage.setItem(SUBMITTED_KEY, "true");
       dispatch(setModalRdx(false));
-      window.open("/brochure.pdf", "_blank");
+      // window.open("/brochure.pdf", "_blank");
+
+      const link = document.createElement("a");
+      link.href = "/brochure.pdf";
+      link.target = "_blank";
+      link.rel = "noopener";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
 
       // optional reset
       setFullname("");
@@ -50,8 +60,15 @@ function DetailsModal() {
       setEmail("");
     } catch (error) {
       console.log("error", error);
-      const message = error?.response?.data || error?.message || "Something went wrong. Please try again.";
-      toast.error(message);
+      const messages = error?.response?.data || error?.message || "Something went wrong. Please try again.";
+      if (messages.invalidParams.length > 0) {
+        console.log(messages.invalidParams[0].message);
+        toast.error(messages.invalidParams[0].message);
+      } else {
+        toast.error("Something went wrong.");
+      }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -136,7 +153,7 @@ function DetailsModal() {
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          type="text"
+          type="email"
           placeholder="E-Mail адрес"
           className="border border-gray-500 rounded-md p-2 text-base"
           onInput={(e) => {
@@ -146,7 +163,8 @@ function DetailsModal() {
 
         <button
           onClick={handleSubmit}
-          className="px-6 py-2 text-white hover:bg-black/80 transition-all text-sm md:text-base bg-black mt-auto rounded"
+          disabled={loading}
+          className="px-6 py-2 text-white hover:bg-black/80 transition-all text-sm md:text-base bg-black mt-auto cursor-pointer rounded disabled:opacity-50"
         >
           Скачать брошюру
         </button>
