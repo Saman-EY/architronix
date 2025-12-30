@@ -24,14 +24,14 @@ function DownloadBrochurBtn() {
     }
   };
   return (
-    <button onClick={handleClick} className="mt-16 inline-block">
+    <div onClick={handleClick} className="mt-16 inline-block">
       <ButtonFill
         className={`sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground`}
       >
         {" "}
         СМОТРЕТЬ ПРОЕКТЫ <RightArrow width={"35"} height={"22"} />{" "}
       </ButtonFill>
-    </button>
+    </div>
   );
 }
 

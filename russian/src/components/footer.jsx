@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className="mt-[18px]">
                   <p className="text-xl font-bold text-primary-foreground">Комплекс AIDA </p>
                   <p className="text-lg text-primary-foreground">Султанат Оман, г. Маскат</p>
-                  <p className="text-lg  text-primary-foreground">NC 27262, USA </p>
+                  <p className="text-lg  text-primary-foreground">Маскат, Султанат Оман</p>
                 </div>
                 <div className="mt-[17px]">
                   <Link href={"tel:+34962398486"} className="text-lg block text-primary-foreground hover-underline">
