@@ -2,16 +2,16 @@
 import { cn } from "@/lib/utils";
 import SlotCounter from "react-slot-counter";
 const counterList = [
-  {
-    id: 1,
-    count: "15+",
-    title: "МИРОВЫХ БРЕНДОВ-ПАРТНЕРОВ",
-  },
-  {
-    id: 2,
-    count: "$2.3М",
-    title: "ОБЪЕМ ПРОЕКТОВ",
-  },
+  // {
+  //   id: 1,
+  //   count: "15+",
+  //   title: "МИРОВЫХ БРЕНДОВ-ПАРТНЕРОВ",
+  // },
+  // {
+  //   id: 2,
+  //   count: "$2.3М",
+  //   title: "ОБЪЕМ ПРОЕКТОВ",
+  // },
   {
     id: 3,
     count: "18",

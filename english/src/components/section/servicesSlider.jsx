@@ -18,15 +18,7 @@ const ServicesSlider = ({ text_muted, bg_muted }) => {
   return (
     <section className="pt-20">
       <div className="container-fluid">
-        <SectionTitle
-          sectionName={"GULF DOM"}
-          sectionTitle={"НАШИ КЛЮЧЕВЫЕ УСЛУГИ"}
-          sectionDesc={"ПОЛНЫЙ ЦИКЛ СОПРОВОЖДЕНИЯ ИНВЕСТОРА"}
-          link={"/services"}
-          button_text={"ВСЕ УСЛУГИ"}
-          text_muted={text_muted}
-          bg_muted={bg_muted}
-        />
+     
         <div className="lg:pt-30 2sm:pt-20 pt-14">
           <Swiper
             spaceBetween={30}
