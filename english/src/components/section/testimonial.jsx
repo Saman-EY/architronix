@@ -43,8 +43,8 @@ const Testimonial = ({ text_muted, bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"GULF DOM "}
-          sectionTitle={"Client Experiences"}
-          sectionDesc={"Inspiring Stories from Our Clients, Where Dreams Find Their Designers"}
+          sectionTitle={"ОТЗЫВЫ ПАРТНЁРОВ"}
+          sectionDesc={"ДОВЕРИЕ ЛИДЕРОВ РЫНКА — ГАРАНТИЯ НАШЕЙ ЭКСПЕРТИЗЫ"}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

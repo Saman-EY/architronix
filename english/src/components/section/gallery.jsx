@@ -14,10 +14,10 @@ const Gallery = ({ text_muted, bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"DAR GLOBAL "}
-          sectionTitle={"Exploring Our Creations"}
-          sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
+          sectionTitle={"НАШИ ЭКСКЛЮЗИВНЫЕ ПРОЕКТЫ"}
+          sectionDesc={"ГДЕ МЕЧТЫ СТАНОВЯТСЯ РЕАЛЬНОСТЬЮ"}
           link={"/project-archive"}
-          button_text={"View All Projects "}
+          button_text={"ВСЕ ПРОЕКТЫ "}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

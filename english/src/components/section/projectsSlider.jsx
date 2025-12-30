@@ -31,9 +31,9 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"Projects"}
-          sectionTitle={"Creative Showcase"}
-          sectionDesc={"Where Imagination Meets Reality in Every Frame"}
-          button_text={"View Projects "}
+          sectionTitle={"ЭКСКЛЮЗИВНЫЕ ПРОЕКТЫ"}
+          sectionDesc={"ИНВЕСТИЦИИ С МИРОВЫМИ БРЕНДАМИ"}
+          button_text={"ВСЕ ПРОЕКТЫ "}
           link={"/project-archive"}
           bg_muted={bg_muted}
           text_muted={text_muted}

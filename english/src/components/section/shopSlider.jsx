@@ -18,10 +18,10 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"DAR GLOBAL"}
-          sectionTitle={"Design Elegance Emporium"}
-          sectionDesc={"Discover Unparalleled Luxury for Your Space"}
+          sectionTitle={"БРЕНД GULF DOM"}
+          sectionDesc={"ЭКСКЛЮЗИВНЫЙ ДОСТУП К ПРОЕКТАМ DAR GLOBAL"}
           link={"/about-us"}
-          button_text={"View"}
+          button_text={"СМОТРЕТЬ ПРОЕКТЫ"}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

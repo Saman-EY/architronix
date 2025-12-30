@@ -12,8 +12,8 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"GULF DOM "}
-          sectionTitle={"Visual Design Odyssey"}
-          sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
+          sectionTitle={"КОМПАНИЯ-ПАРТНЕР: DAR GLOBAL PLC"}
+          sectionDesc={"МИРОВЫЕ ПРОЕКТЫ ПРЕМИУМ-КЛАССА С 2017 ГОДА"}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

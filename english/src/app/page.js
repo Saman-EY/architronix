@@ -4,7 +4,6 @@ import AboutOne from "@/components/section/about/aboutOne";
 import BlogSlider from "@/components/section/blogSlider";
 import Feedback from "@/components/section/feedback";
 import Gallery from "@/components/section/gallery";
-import BannerOne from "@/components/section/heroes/bannerOne";
 import BannerThree from "@/components/section/heroes/bannerThree";
 import ProjectsSlider from "@/components/section/projectsSlider";
 import ServicesSlider from "@/components/section/servicesSlider";
@@ -14,7 +13,6 @@ import VideoPortfolio from "@/components/section/videoPortfolio";
 import TeamCardOne from "@/components/ui/cards/teamCardOne";
 import Counter from "@/components/ui/counter";
 import SectionTitle from "@/components/ui/sectionTitle";
-import { bannerOneData } from "@/lib/fackData/bannerOneData";
 import { blogData } from "@/lib/fackData/blogData";
 import { productData } from "@/lib/fackData/productData";
 import { teamData } from "@/lib/fackData/teamData";
@@ -29,21 +27,21 @@ const Home = () => {
     <>
       <HeaderThree />
 
-      <BannerOne data={bannerOneData} />
+      <BannerThree />
       <AboutOne />
+
       <Counter />
       <Gallery />
       <ServicesSlider />
 
-      {/* --------- start team section */}
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
-            sectionName={"Team"}
-            sectionTitle={"Architects of Architronix"}
-            sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
-            button_text={"All Architects"}
-            link={"/team"}
+            sectionName={"DAR GLOBAL "}
+            sectionTitle={"АРХИТЕКТОРЫ ПРОЕКТА AIDA"}
+            sectionDesc={"ГДЕ ПРИРОДА ВСТРЕЧАЕТСЯ С РОСКОШЬЮ НА ВЫСОТЕ 130 МЕТРОВ"}
+            button_text={"ВСЕ ОБЪЕКТЫ"}
+            link={"/project-single"}
           />
         </div>
         <div className="container lg:pt-[340px] 2sm:pt-20 pt-14">
@@ -62,30 +60,28 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* --------- end team section */}
 
       <VideoPortfolio />
       <ProjectsSlider />
       <Testimonial />
       <ShopSlider data={productData.slice(0, 5)} />
-
-      {/* -------- blog slider start */}
       <section className="pt-20">
-        <div className="container-fluid ">
+        <div className="container-fluid">
           <SectionTitle
-            sectionName={"Blog"}
-            sectionTitle={"Design Insights & Inspiration"}
-            sectionDesc={"Unveil the Secrets to Transforming Spaces"}
+            sectionName={"GULF DOM"}
+            sectionTitle={"АНАЛИТИКА И ИНСАЙТЫ"}
+            sectionDesc={"РАЗБИРАЕМ ТРЕНДЫ РЫНКА ЭЛИТНОЙ НЕДВИЖИМОСТИ"}
           />
         </div>
         <div className="container lg:pt-30 2sm:pt-20 pt-14">
           <BlogSlider data={blogData.slice(0, 4)} />
         </div>
       </section>
-      {/* -------- blog slider end */}
 
       <Feedback />
       <Footer />
+
+  
     </>
   );
 };

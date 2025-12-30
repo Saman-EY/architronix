@@ -20,10 +20,10 @@ const ServicesSlider = ({ text_muted, bg_muted }) => {
       <div className="container-fluid">
         <SectionTitle
           sectionName={"GULF DOM"}
-          sectionTitle={"Explore Our Design Offerings"}
-          sectionDesc={"Exploring Excellence in Every Meticulous Design Detail"}
+          sectionTitle={"НАШИ КЛЮЧЕВЫЕ УСЛУГИ"}
+          sectionDesc={"ПОЛНЫЙ ЦИКЛ СОПРОВОЖДЕНИЯ ИНВЕСТОРА"}
           link={"/services"}
-          button_text={"View All Services"}
+          button_text={"ВСЕ УСЛУГИ"}
           text_muted={text_muted}
           bg_muted={bg_muted}
         />
