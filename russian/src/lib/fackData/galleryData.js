@@ -3,14 +3,14 @@ export const galleryData = [
     id: "01",
     img_title: "AIDA, ОМАН",
     img_desc: "Закрытый комплекс с брендами Trump и Marriott на высоте 130 метров над океаном.",
-    img: "/card1.JPG",
+    img: "/card1.jpg",
     link: "/project-single",
   },
   {
     id: "02",
     img_title: "DUBAI, ОАЭ",
     img_desc: "Премиальные апартаменты в знаковых проектах Дубая от Dar Global.",
-    img: "/card2.JPG",
+    img: "/card2.jpg",
     link: "/project-single",
   },
   {

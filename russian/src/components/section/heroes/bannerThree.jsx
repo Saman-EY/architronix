@@ -1,8 +1,6 @@
 import React from "react";
 import TextTyped from "../../ui/textTyped";
-import Link from "next/link";
-import ButtonFill from "@/components/ui/buttons/buttonFill";
-import RightArrow from "@/assets/icons/rightArrow";
+import DownloadBrochurBtn from "./DownloadBrochurBtn";
 
 const BannerThree = () => {
   return (
@@ -30,14 +28,7 @@ const BannerThree = () => {
               <br />
               <TextTyped text={["ИЗЫСКАННОСТЬ", "СОВЕРШЕНСТВО", "РОСКОШЬ", "ПРЕСТИЖ"]} />
             </h1>
-            <Link href={"/project-archive"} className="mt-16 inline-block">
-              <ButtonFill
-                className={`sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground`}
-              >
-                {" "}
-                СМОТРЕТЬ ПРОЕКТЫ <RightArrow width={"35"} height={"22"} />{" "}
-              </ButtonFill>
-            </Link>
+            <DownloadBrochurBtn />
           </div>
         </div>
       </div>
