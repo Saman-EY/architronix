@@ -33,7 +33,7 @@ const Home = () => {
 
       <BannerOne data={bannerOneData} />
       {/* <AboutOne /> */}
-      <Counter />
+      {/* <Counter /> */}
       <Gallery />
       <ServicesSlider />
 

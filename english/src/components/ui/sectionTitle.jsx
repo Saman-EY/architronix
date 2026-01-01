@@ -6,7 +6,16 @@ import { useEffect, useRef, useState } from "react";
 import RightArrow from "@/assets/icons/rightArrow";
 import ButtonOutline from "./buttons/buttonOutline";
 
-const SectionTitle = ({ sectionName, sectionTitle, sectionDesc, text_muted, bg_muted, link, button_text }) => {
+const SectionTitle = ({
+  sectionName,
+  sectionTitle,
+  sectionDesc,
+  text_muted,
+  bg_muted,
+  link,
+  button_text,
+  downloadPdf,
+}) => {
   const [scroll, setScroll] = useState(false);
   const [scrollHeight, setScrollHeight] = useState(0);
   const containerRef = useRef();
@@ -69,6 +78,7 @@ const SectionTitle = ({ sectionName, sectionTitle, sectionDesc, text_muted, bg_m
                 </ButtonOutline>
               </Link>
             )}
+            {downloadPdf && <div className="inline-block">{downloadPdf}</div>}
           </div>
         </div>
       </div>

@@ -4,8 +4,7 @@ import RightArrow from "@/assets/icons/rightArrow";
 import { useDispatch } from "react-redux";
 import { setModalRdx } from "@/redux/others";
 
-
-function DownloadBrochurBtn() {
+function DownloadBrochurBtn({ children, parentClass }) {
   const dispatch = useDispatch();
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
@@ -23,6 +22,11 @@ function DownloadBrochurBtn() {
       document.body.removeChild(link);
     }
   };
+
+  if (children) {
+    return <div className={`mt-10 inline-block ${parentClass}`} onClick={handleClick}>{children}</div>;
+  }
+
   return (
     <div onClick={handleClick} className="mt-16 inline-block">
       <ButtonFill

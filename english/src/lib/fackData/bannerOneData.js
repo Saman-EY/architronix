@@ -5,23 +5,23 @@ import hero_3 from "@/assets/images/hero-3.jpg"
 export const bannerOneData = [
     {
         id: 1,
-        title: "Elegant Design Showcase",
-        heading_one: "Elegance",
-        heading_two: "Redefined",
+        title: "TRUMP CLIFF VILLAS Oman",
+        heading_one: "Oman",
+        heading_two: "TRUMP VILLAS",
         banner_img: hero_1,
     },
     {
         id: 2,
-        title: "Sustainable Design Focus",
-        heading_one: "Greener",
-        heading_two: "Tomorrow",
+        title: "TRUMP TOWER JEDDAH SAUDI ARABIA",
+        heading_one: "SAUDI ARABIA",
+        heading_two: "TRUMP TOWER",
         banner_img: hero_2,
     },
     {
         id: 3,
-        title: "Meet Our Design Team",
-        heading_one: "Space",
-        heading_two: "Evolution",
+        title: "Trump International Hotel & Tower Dubai",
+        heading_one: "DUBAI",
+        heading_two: "TRUMP TOWER",
         banner_img: hero_3,
     },
 ]

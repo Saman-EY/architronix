@@ -6,6 +6,10 @@ import Link from "next/link";
 import SectionTitle from "../ui/sectionTitle";
 import { galleryData } from "@/lib/fackData/galleryData";
 import { staticBluarDataUrl } from "@/lib/staticBluarDataUrl";
+import ButtonOutline from "../ui/buttons/buttonOutline";
+import { cn } from "@/lib/utils";
+import RightArrow from "@/assets/icons/rightArrow";
+import DownloadBrochurBtn from "./heroes/DownloadBrochurBtn";
 
 const Gallery = ({ text_muted, bg_muted }) => {
   const [expendItem, setExpendItem] = useState("02");
@@ -14,10 +18,17 @@ const Gallery = ({ text_muted, bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"DAR GLOBAL "}
-          sectionTitle={"НАШИ ЭКСКЛЮЗИВНЫЕ ПРОЕКТЫ"}
-          sectionDesc={"ГДЕ МЕЧТЫ СТАНОВЯТСЯ РЕАЛЬНОСТЬЮ"}
+          sectionTitle={"Invest in DarGlobal"}
+          sectionDesc={"REQUEST THE OFFICIAL BROCHURE"}
           link={"/project-archive"}
-          button_text={"ВСЕ ПРОЕКТЫ "}
+          // button_text={"ВСЕ ПРОЕКТЫ"}
+          downloadPdf={
+            <DownloadBrochurBtn>
+              <ButtonOutline className={cn(`2sm:px-10 px-3 after:left-0 after:${bg_muted}`)}>
+                DOWNLOAD BROCHURE <RightArrow height={"22"} width={"35"} />{" "}
+              </ButtonOutline>
+            </DownloadBrochurBtn>
+          }
           bg_muted={bg_muted}
           text_muted={text_muted}
         />
