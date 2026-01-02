@@ -99,8 +99,8 @@ const Faq = ({ className }) => {
       <div className="container-fluid">
         <SectionTitle
           sectionName={"GULF DOM"}
-          sectionTitle={"ИСКУССТВО ИНВЕСТИЦИЙ В НЕДВИЖИМОСТЬ"}
-          sectionDesc={"Вопросы и ответы"}
+          sectionTitle={"THE ART OF REAL ESTATE INVESTMENT"}
+          sectionDesc={"Q&A"}
         />
       </div>
       <div className="container lg:pt-30 2sm:pt-20 pt-14">
