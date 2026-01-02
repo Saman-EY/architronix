@@ -12,24 +12,24 @@ import { cn } from "@/lib/utils";
 const testimonialData = [
   {
     id: 1,
-    name: "Официальный представитель",
-    position: "Dar Global PLC",
+    name: "Premium design. World-class living.",
+    position: "DARGLOBAL PLC COMPANY",
     review:
-      "Dar Global выбирает только лучших партнёров для реализации своих проектов. Их подход к инвестициям задаёт новые стандарты в регионе",
+      "DarGlobal is a leading real estate developer. But we’re much more than that. We’re a strategic investment partner, creating lucrative opportunities for our clients, and catalyzing economic transformation in the countries we enter.",
   },
   {
     id: 2,
-    name: "Директор по развитию",
-    position: "Luxury Real Estate Network",
+    name: "Premium design. World-class living.",
+    position: "DARGLOBAL PLC COMPANY",
     review:
-      "Сотрудничество с Dar Global — это всегда работа с проверенными проектами премиум-класса и высочайшим уровнем сервиса",
+      "DarGlobal isn’t your typical luxury developer. We’re reimagining what it means to live well, by investing wisely. We specialize in delivering artfully designed residences in cosmopolitan destinations, for global citizens looking for an elevated quality of life—and a high return on investment. ",
   },
   {
     id: 3,
-    name: "Финансовый аналитик",
-    position: "Global Investment Review",
+    name: "Premium design. World-class living.",
+    position: "DARGLOBAL PLC COMPANY",
     review:
-      "Проекты Dar Global, такие как AIDA в Омане, демонстрируют исключительное качество и понимание рынка элитной недвижимости",
+      "Our projects elevate the places where they’re located. Each enhances local infrastructure, increases international appeal, and stimulates Foreign Direct Investment (FDI). All while offering exceptional experiences and growing our investors’ wealth.",
   },
 ];
 const Testimonial = ({ text_muted, bg_muted }) => {
@@ -43,8 +43,8 @@ const Testimonial = ({ text_muted, bg_muted }) => {
       <div className="container-fluid ">
         <SectionTitle
           sectionName={"GULF DOM "}
-          sectionTitle={"ОТЗЫВЫ ПАРТНЁРОВ"}
-          sectionDesc={"ДОВЕРИЕ ЛИДЕРОВ РЫНКА — ГАРАНТИЯ НАШЕЙ ЭКСПЕРТИЗЫ"}
+          sectionTitle={"OUR PROJECTS"}
+          sectionDesc={"ESCAPES THAT COME WITH RETURNS"}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

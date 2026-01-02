@@ -47,8 +47,8 @@ const Home = () => {
         <div className="container-fluid ">
           <SectionTitle
             sectionName={"Blog"}
-            sectionTitle={"Design Insights & Inspiration"}
-            sectionDesc={"Unveil the Secrets to Transforming Spaces"}
+            sectionTitle={"ELITE COLLABORATORS SINGULAR RESULTS"}
+            sectionDesc={"LUXURY ABOVE ALL"}
           />
         </div>
         <div className="container lg:pt-30 2sm:pt-20 pt-14">

@@ -113,7 +113,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                   `h-[75px] text-base sm:text-lg hover:border-primary sm:px-10 px-3 after:left-0 after:${bg_muted}`
                 )}
               >
-                СЛЕДУЮЩИЙ ПРОЕКТ <RightArrow width={"35"} height={"22"} />
+                Dar Global Project <RightArrow width={"35"} height={"22"} />
               </ButtonFill>
             </div>
           </div>

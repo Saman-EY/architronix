@@ -11,7 +11,7 @@ export const productData = [
     id: 1,
     product_img: "/trump.JPG",
     prodcut_album: [product_tab_1, product_tab_2],
-    product_name: "TRUMP INTERNATIONAL HOTEL",
+    product_name: "DUBAI, UNITED ARAB EMIRATES",
     price: "134.99",
     product_overview:
       "The Ratio Pendant Lamp featurees a wide lampshade, referring  the bold and elegant shape  classic metal penwdants. The lamp to features a spun steel shade with a seweamlessly embedded LED module.",
@@ -21,7 +21,7 @@ export const productData = [
     id: 2,
     product_img: "/marriot.JPG",
     prodcut_album: [product_img_1, product_img_2],
-    product_name: "MARRIOTT RESIDENCES",
+    product_name: "W RESIDENCES DUBAI, DOWNTOWN",
     price: "499.99",
     product_overview:
       "The Ratio Pendant Lamp featurees a wide lampshade, referring  the bold and elegant shape  classic metal penwdants. The lamp to features a spun steel shade with a seweamlessly embedded LED module.",
@@ -31,22 +31,22 @@ export const productData = [
     id: 3,
     product_img: "/mens.JPG",
     prodcut_album: [product_img_1, product_img_2],
-    product_name: "ПОЛЕ ДЛЯ ГОЛЬФА TRUMP",
+    product_name: "MIAMI VIBES DUBAI VIBRANCE DARGLOBAL PLC",
     price: "249.99",
     product_overview:
       "The Ratio Pendant Lamp featurees a wide lampshade, referring  the bold and elegant shape  classic metal penwdants. The lamp to features a spun steel shade with a seweamlessly embedded LED module.",
     rating: "2.0",
   },
-  {
-    id: 4,
-    product_img: "/theLast.PNG",
-    prodcut_album: [product_img_1, product_img_2],
-    product_name: "ВИЛЛЫ С ВИДОМ НА МОРЕ",
-    price: "249.99",
-    product_overview:
-      "The Ratio Pendant Lamp featurees a wide lampshade, referring  the bold and elegant shape  classic metal penwdants. The lamp to features a spun steel shade with a seweamlessly embedded LED module.",
-    rating: "4.5",
-  },
+  // {
+  //   id: 4,
+  //   product_img: "/theLast.PNG",
+  //   prodcut_album: [product_img_1, product_img_2],
+  //   product_name: "ВИЛЛЫ С ВИДОМ НА МОРЕ",
+  //   price: "249.99",
+  //   product_overview:
+  //     "The Ratio Pendant Lamp featurees a wide lampshade, referring  the bold and elegant shape  classic metal penwdants. The lamp to features a spun steel shade with a seweamlessly embedded LED module.",
+  //   rating: "4.5",
+  // },
   // {
   //     id:5,
   //     product_img:product_img_5,

@@ -7,30 +7,92 @@ import SectionSidebarImg from "../ui/sectionSidebarImg";
 const faqData = [
   {
     id: "1",
-    question: "Какие услуги по инвестициям в недвижимость вы предлагаете?",
-    ans: `Gulf Dom предлагает комплексное сопровождение на всех этапах инвестирования в элитную недвижимость Дубая, Омана, Катара и Саудовской Аравии. Наши услуги «под ключ» включают: персональный подбор объекта, организацию ознакомительных поездок, полное юридическое и финансовое оформление сделки, помощь в открытии банковского счета, получении резидентской визы, а также дальнейшее управление недвижимостью и сдачу ее в аренду. Мы являемся официальными партнерами ведущих девелоперов, таких как DarGlobal, что гарантирует вам доступ к лучшим проектам и условиям.`,
+    question: "What real estate investment services do you offer?",
+    ans: (
+      <>
+        <p className="mb-4">
+          We offer comprehensive luxury real estate investment services in Dubai, Oman, Qatar, and Saudi Arabia. Our
+          services include:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Personalized property selection</li>
+          <li>Viewing trips and virtual tours</li>
+          <li>Full legal and transactional support</li>
+          <li>Assistance with bank accounts and residency visas</li>
+          <li>Property management and rental services</li>
+        </ul>
+        <p className="mt-4">We provide exclusive access to premium projects from leading developers.</p>
+      </>
+    ),
   },
   {
     id: "2",
-    question: "Как вы помогаете с выбором и анализом проекта?",
-    ans: `Наши эксперты проводят для вас глубокий анализ рынка и конкретных проектов. Мы оцениваем потенциал роста стоимости объекта, прогнозируем доходность от аренды, изучаем репутацию застройщика и юридические аспекты. Для таких эксклюзивных проектов, как AIDA в Омане, мы предоставляем детальные отчеты, финансовые модели и организуем личные встречи с девелопером. Наша цель — предоставить вам всю информацию для принятия взвешенного и прибыльного решения.`,
+    question: "How do you help with project selection and analysis?",
+    ans: (
+      <>
+        <p className="mb-4">Our experts conduct in-depth market and project analysis for you. We evaluate:</p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Capital appreciation potential</li>
+          <li>Rental yield forecasts</li>
+          <li>Developer reputation</li>
+          <li>Legal compliance</li>
+        </ul>
+        <p className="mt-4">
+          For exclusive projects such as AIDA in Oman, we provide detailed reports and arrange direct developer
+          meetings.
+        </p>
+      </>
+    ),
   },
   {
     id: "3",
-    question: "Что вы подразумеваете под «безопасными инвестициями»?",
-    ans: `Под «безопасными инвестициями» мы понимаем вложения в объекты с минимальными рисками и долгосрочным потенциалом. Мы фокусируемся на странах со стабильной политикой и экономикой (как ОАЭ и Оман), проектах от надежных, котирующихся на бирже застройщиков (как DarGlobal), и объектах, которые дают дополнительные преимущества — например, вид на жительство. Все расчеты ведутся через защищенные эскроу-счета, а наши юристы гарантируют чистоту сделки.`,
+    question: 'What do you mean by "secure investments"?',
+    ans: (
+      <>
+        <p className="mb-4">We focus on opportunities with minimized risk and long-term potential, including:</p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Stable markets like the UAE and Oman</li>
+          <li>Projects by reputable, publicly listed developers</li>
+          <li>Properties offering residency benefits</li>
+        </ul>
+        <p className="mt-4">All transactions are secured through protected escrow accounts.</p>
+      </>
+    ),
   },
   {
     id: "4",
-    question: "Как происходит процесс работы с клиентом?",
-    ans: `Вы получаете персонального менеджера, который сопровождает вас от первой консультации до сдачи объекта в аренду. Процесс включает: 1) Определение ваших целей и бюджета; 2) Подбор нескольких вариантов и онлайн-презентацию; 3) Организацию поездки на просмотр (при необходимости); 4) Подготовку и согласование всех документов; 5) Сопровождение платежей и регистрации права собственности; 6) Помощь в оформлении визы и открытии счета. Мы всегда на связи и держим вас в курсе каждого этапа.`,
+    question: "What is your client journey like?",
+    ans: (
+      <>
+        <p className="mb-4">You receive a dedicated manager who guides you through:</p>
+        <ol className="list-decimal pl-5 space-y-2">
+          <li>Understanding your goals and budget</li>
+          <li>Curating a property shortlist</li>
+          <li>Arranging inspection trips</li>
+          <li>Handling all legal documents</li>
+          <li>Managing payments and registration</li>
+          <li>Assisting with visas and banking</li>
+        </ol>
+        <p className="mt-4">We ensure clear communication at every step.</p>
+      </>
+    ),
   },
   {
     id: "5",
-    question: "Какую помощь с финансированием вы оказываете?",
-    ans: `Мы предлагаем клиентам несколько вариантов финансирования. Во-первых, это прямые рассрочки от застройщика с гибким графиком платежей (например, для проекта AIDA). Во-вторых, мы предоставляем доступ к уникальным банковским продуктам, таким как первая в Омане ипотека для нерезидентов от Sohar Islamic, которая покрывает до 50% стоимости. Наши финансовые консультанты помогут подобрать оптимальную схему, рассчитать выплаты и подготовить пакет документов для банка.`,
+    question: "What financing support do you provide?",
+    ans: (
+      <>
+        <p className="mb-4">We offer tailored financing solutions:</p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Flexible developer payment plans</li>
+          <li>Access to exclusive bank products, such as non-resident mortgages</li>
+          <li>Personalized advice to choose the best financial structure</li>
+        </ul>
+      </>
+    ),
   },
 ];
+
 const Faq = ({ className }) => {
   return (
     <section className={`pt-20 ${className}`}>
@@ -44,7 +106,11 @@ const Faq = ({ className }) => {
       <div className="container lg:pt-30 2sm:pt-20 pt-14">
         <div className="grid lg:grid-cols-[40%_auto] items-center gap-17.5">
           <div>
-            <SectionSidebarImg imgClass={"h-[400px] md:h-[600px]"} img={"/qa-img.jpg"} section_name={"faq-background"} />
+            <SectionSidebarImg
+              imgClass={"h-[400px] md:h-[600px]"}
+              img={"/qa-img.jpg"}
+              section_name={"faq-background"}
+            />
           </div>
 
           <div>

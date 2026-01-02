@@ -17,8 +17,8 @@ const Career = () => {
         <div className="container-fluid ">
           <SectionTitle
             sectionName={"ПОРТФОЛИО"}
-            sectionTitle={"НАШИ ПРОЕКТЫ В МИРЕ"}
-            sectionDesc={"Эксклюзивная недвижимость от Dar Global в самых желанных точках планеты"}
+            sectionTitle={"EXPAND YOUR WORLD."}
+            sectionDesc={"Invest in real estate and obtain lifetime residency."}
           />
         </div>
         <div className="container mt-30">
@@ -46,8 +46,8 @@ const Career = () => {
         <div className="container-fluid ">
           <SectionTitle
             sectionName={"GULF DOM"}
-            sectionTitle={"ПОЧЕМУ С НАМИ?"}
-            sectionDesc={"Эксклюзивная недвижимость от Dar Global в самых желанных точках планеты"}
+            sectionTitle={"12 REASONS"}
+            sectionDesc={"to invest in TRUMP BRAND IN REAL ESTATE"}
           />
           <div className="lg:pt-30 2sm:pt-20 pt-14  ">
             <div className="grid xl:grid-cols-4 lg:grid-cols-2 2sm:grid-cols-2 gap-x-[32px] gap-y-10">
