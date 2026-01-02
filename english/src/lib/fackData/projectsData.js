@@ -9,7 +9,7 @@ export const projectsData = [
     area: "45-107 м²",
     project_year: "December 2029",
     project_type: "Apartments",
-    link: "/project-single",
+    link: "/",
     location: "Saudi Arabia",
   },
   {
@@ -22,7 +22,7 @@ export const projectsData = [
     area: "67-134 м²",
     project_year: "December 2028",
     project_type: "Mixed-use Development",
-    link: "/project-single",
+    link: "/",
     location: "MUSCAT |  OMAN",
   },
   {
@@ -35,7 +35,7 @@ export const projectsData = [
     area: "250-400 м²",
     project_year: "December 2027",
     project_type: "Branded Residential Complex",
-    link: "/project-single",
+    link: "/",
     location: "DOHA , QATAR",
   },
   {
@@ -48,7 +48,7 @@ export const projectsData = [
     area: "170-250 м²",
     project_year: "December 2031",
     project_type: "Branded Hotel & Residential Tower",
-    link: "/project-single",
+    link: "/",
     location: "DUBAI , UAE",
   },
 ];

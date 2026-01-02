@@ -8,7 +8,7 @@ const temaList = [
   {
     id: 1,
     img: "/member1.jpg",
-    link: "/project-single",
+    link: "/",
     name: "TRUMP ORGANIZATION",
     position: "Эксклюзивный оператор",
     desc: "Мировой лидер в сфере luxury-недвижимости и гостеприимства управляет флагманским отелем, гольф-клубом и виллами, гарантируя безупречный сервис и высочайший стандарт качества.",
@@ -16,7 +16,7 @@ const temaList = [
   {
     id: 2,
     img: "/member2.jpg",
-    link: "/project-single",
+    link: "/",
     name: "MARRIOTT INTERNATIONAL",
     position: "Управляющий партнер",
     desc: "Легендарный гостиничный бренд обеспечивает управление и сервис для апартаментов Marriott Residences, предлагая владельцам статус и надежность международной сети.",
@@ -24,7 +24,7 @@ const temaList = [
   {
     id: 3,
     img: "/member3.jpg",
-    link: "/project-single",
+    link: "/",
     name: " DAR GLOBAL",
     position: "Девелопер проекта",
     desc: "As the lead designer, Michael brought creativity and innovation to the project. His visionary approach guided the entire design process. → Международный девелопер, котирующийся на Лондонской фондовой бирже, выступил создателем и инвестором концепции AIDA, объединив лучших мировых партнеров.",
@@ -32,7 +32,7 @@ const temaList = [
   {
     id: 4,
     img: "/member4.jpg",
-    link: "/project-single",
+    link: "/",
     name: "ПРАВИТЕЛЬСТВО ОМАНА",
     position: "Стратегический партнер",
     desc: "В рамках государственной программы Vision 2040 предоставляет инвесторам особые условия: 100% владение недвижимостью, нулевое налогообложение и вид на жительство.",
@@ -40,7 +40,7 @@ const temaList = [
   {
     id: 5,
     img: "/car1.jpg",
-    link: "/project-single",
+    link: "/",
     name: "AUTOMOBILI LAMBORGHINI",
     position: "Партнер по дизайну",
     desc: "",
@@ -48,7 +48,7 @@ const temaList = [
   {
     id: 6,
     img: "/car2.jpg",
-    link: "/project-single",
+    link: "/",
     name: "PAGANI AUTOMOBILI",
     position: "Партнер по дизайну интерьеров",
     desc: "",

@@ -21,7 +21,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
       return `
                     <div class='opacity-0 relative h-0 translate-y-15 ${className}'>
                         <h2 class='text-secondary-foreground leading-120 text-xl mb-3 sm:text-4xl font-extrabold '>${projectsData[index].project_name}</h2>
-                        <a href="/project-single" class='text-secondary-foreground mt-[30px]'>${projectsData[index].project_desc}</a>
+                        <a href="/" class='text-secondary-foreground mt-[30px]'>${projectsData[index].project_desc}</a>
                     </div>
                     `;
     },
@@ -66,21 +66,21 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                       <span className="text-lg font-normal">{client}</span>
                     </h6> */}
 
-                    <h6 className="sm:flex  w-full max-w-[11rem] hidden flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
+                    {/* <h6 className="sm:flex  w-full max-w-[11rem] hidden flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       ПЛОЩАДЬ:
                       <span className="text-lg font-normal">{area}</span>
-                    </h6>
+                    </h6> */}
                     <h6 className="sm:flex w-full max-w-[11rem] hidden flex-col text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap ">
-                      ГОД:
+                      Year:
                       <span className="text-lg font-normal">{project_year}</span>
                     </h6>
                     <h6 className="flex flex-col w-full max-w-[11rem] text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
-                      ТИП:
+                      Type:
                       <span className="text-lg font-normal">{project_type}</span>
                     </h6>
                     <Link href={"/project-archive"} className="4xl:block hidden">
                       <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">
-                        СЛЕДУЮЩИЙ ПРОЕКТ
+                        DOWNLOAD BROCHURE
                       </ButtonOutline>
                     </Link>
                   </div>

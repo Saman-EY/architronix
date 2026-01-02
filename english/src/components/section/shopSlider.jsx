@@ -20,7 +20,7 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
           sectionName={"DAR GLOBAL"}
           sectionTitle={"OUR OFFICES •9 / PROJECT CITIES •11"}
           sectionDesc={"ONE GLOBAL NETWORK BOUNDLESS OPPORTUNIT"}
-          link={"/about-us"}
+          link={"/"}
           button_text={"DOWNLOAD BROCHURE"}
           bg_muted={bg_muted}
           text_muted={text_muted}

@@ -54,7 +54,7 @@ const innerDemoData = [
   {
     id: 1,
     demo_img: about_us,
-    link: "/about-us",
+    link: "/",
     demo_name: "About Us",
   },
   {
@@ -114,13 +114,13 @@ const innerDemoData = [
   {
     id: 11,
     demo_img: project_single,
-    link: "/project-single",
+    link: "/",
     demo_name: "Project Single",
   },
   {
     id: 12,
     demo_img: services,
-    link: "/services",
+    link: "/",
     demo_name: "Services",
   },
   {

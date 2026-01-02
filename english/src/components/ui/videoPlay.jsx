@@ -26,16 +26,16 @@ const VideoPlay = ({ img }) => {
           alt="video"
           width={500}
           height={500}
-          className="w-full max-w-[698px] mx-auto h-full object-cover"
+          className="w-full max-w-[698px] mx-auto h-full max-h-[700px] object-cover"
         />
         {isOpen && (
           <div
             onClick={() => setOpen(false)}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+            className="fixed inset-0 z-50 flex  items-center justify-center bg-black/70"
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-3xl bg-black rounded-lg overflow-hidden"
+              className="relative w-full max-w-3xl bg-black max-h-[90vh] rounded-lg overflow-hidden"
             >
               {/* Close button */}
               <button onClick={() => setOpen(false)} className="absolute top-3 right-3 z-10 text-white text-xl">
