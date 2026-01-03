@@ -26,7 +26,7 @@ const VideoPlay = ({ img }) => {
           alt="video"
           width={500}
           height={500}
-          className="w-full max-w-[698px] mx-auto h-full max-h-[700px] object-cover"
+          className="w-full min-w-[500px] min-h-[500px] max-w-[698px] mx-auto h-full max-h-[700px] object-cover"
         />
         {isOpen && (
           <div
@@ -35,15 +35,15 @@ const VideoPlay = ({ img }) => {
           >
             <div
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-3xl bg-black max-h-[90vh] rounded-lg overflow-hidden"
-            >
+              className="relative w-full max-w-3xl bg-black max-h-[86vh] rounded-lg overflow-hidden"
+            > 
               {/* Close button */}
               <button onClick={() => setOpen(false)} className="absolute top-3 right-3 z-10 text-white text-xl">
                 ✕
               </button>
 
               {/* Local video */}
-              <video src="/modalVid.MP4" controls autoPlay className="w-full h-auto" />
+              <video src="/modalVid.mp4" controls autoPlay className="w-full h-auto" />
             </div>
           </div>
         )}

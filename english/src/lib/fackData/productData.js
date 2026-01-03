@@ -9,7 +9,7 @@ import product_tab_2 from "@/assets/images/shop-tab-image-lg-2.jpg";
 export const productData = [
   {
     id: 1,
-    product_img: "/trump.JPG",
+    product_img: "/xy1.jpg",
     prodcut_album: [product_tab_1, product_tab_2],
     product_name: "DUBAI, UNITED ARAB EMIRATES",
     price: "134.99",
@@ -19,7 +19,7 @@ export const productData = [
   },
   {
     id: 2,
-    product_img: "/marriot.JPG",
+    product_img: "/xy2.jpg",
     prodcut_album: [product_img_1, product_img_2],
     product_name: "W RESIDENCES DUBAI, DOWNTOWN",
     price: "499.99",
@@ -29,7 +29,7 @@ export const productData = [
   },
   {
     id: 3,
-    product_img: "/mens.JPG",
+    product_img: "/xy3.jpg",
     prodcut_album: [product_img_1, product_img_2],
     product_name: "MIAMI VIBES DUBAI VIBRANCE DARGLOBAL PLC",
     price: "249.99",

@@ -6,14 +6,7 @@ import React from "react";
 const BlogCard = ({ thumb, date, tag, title, text_muted }) => {
   return (
     <div className="hover-underline">
-      <Image
-        src={thumb}
-        loading="lazy"
-        alt={title}
-        width={500}
-        height={500}
-        className="w-full h-40 object-cover"
-      />
+      <Image src={thumb} loading="lazy" alt={title} width={500} height={500} className="w-full h-[340px] object-cover" />
       <div className="mt-8">
         <p className={cn(`text-primary-foreground flex items-center gap-2 mb-2.5`)}>
           {" "}

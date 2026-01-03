@@ -18,7 +18,6 @@ const ServicesSlider = ({ text_muted, bg_muted }) => {
   return (
     <section className="pt-20">
       <div className="container-fluid">
-     
         <div className="lg:pt-30 2sm:pt-20 pt-14">
           <Swiper
             spaceBetween={30}

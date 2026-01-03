@@ -47,7 +47,7 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
         {data.map(({ id, banner_img, heading_one, heading_two }) => {
           return (
             <SwiperSlide key={id} className="relative ">
-              <div className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${banner_img.src})` }}>
+              <div className="bg-cover bg-no-repeat" style={{ backgroundImage: `url(${banner_img})` }}>
                 <div className="container ">
                   <div className="xl:pt-[200px] pt-[150px] pb-[250px]">
                     <div>

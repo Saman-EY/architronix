@@ -5,7 +5,7 @@ import blog_3 from "@/assets/images/blog-image-3.jpg";
 export const blogData = [
   {
     id: 1,
-    thumb: "/career3.PNG",
+    thumb: "/elite1.jpg",
     author: "",
     date: "2027",
     tag: " DARGLOBAL PLC",
@@ -14,7 +14,7 @@ export const blogData = [
   },
   {
     id: 2,
-    thumb: "/blog2.PNG",
+    thumb: "/elite2.jpg",
     author: "",
     date: "2027",
     tag: "DARGLOBAL PLC",
@@ -23,8 +23,7 @@ export const blogData = [
   },
   {
     id: 3,
-    thumb: "/blog3.PNG",
-
+    thumb: "/elite3.jpg",
     author: "",
     date: "2027",
     tag: "DARGLOBAL PLC",
