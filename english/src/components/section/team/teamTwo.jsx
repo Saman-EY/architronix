@@ -7,7 +7,7 @@ import TeamCardThree from "../../ui/cards/teamCardThree";
 const temaList = [
   {
     id: 1,
-    img: "/member1.jpg",
+    img: "",
     link: "/",
     name: "TRUMP ORGANIZATION",
     position: "Эксклюзивный оператор",
@@ -15,7 +15,7 @@ const temaList = [
   },
   {
     id: 2,
-    img: "/member2.jpg",
+    img: "",
     link: "/",
     name: "MARRIOTT INTERNATIONAL",
     position: "Управляющий партнер",
@@ -23,7 +23,7 @@ const temaList = [
   },
   {
     id: 3,
-    img: "/member3.jpg",
+    img: "",
     link: "/",
     name: " DAR GLOBAL",
     position: "Девелопер проекта",
@@ -31,7 +31,7 @@ const temaList = [
   },
   {
     id: 4,
-    img: "/member4.jpg",
+    img: "",
     link: "/",
     name: "ПРАВИТЕЛЬСТВО ОМАНА",
     position: "Стратегический партнер",
@@ -39,7 +39,7 @@ const temaList = [
   },
   {
     id: 5,
-    img: "/car1.jpg",
+    img: "",
     link: "/",
     name: "AUTOMOBILI LAMBORGHINI",
     position: "Партнер по дизайну",
@@ -47,7 +47,7 @@ const temaList = [
   },
   {
     id: 6,
-    img: "/car2.jpg",
+    img: "",
     link: "/",
     name: "PAGANI AUTOMOBILI",
     position: "Партнер по дизайну интерьеров",

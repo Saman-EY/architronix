@@ -1,10 +1,4 @@
 
-import team_4 from "@/assets/images/team-4.jpg";
-import team_5 from "@/assets/images/team-5.jpg";
-import team_6 from "@/assets/images/team-6.jpg";
-import team_7 from "@/assets/images/team-7.jpg";
-import team_8 from "@/assets/images/team-8.jpg";
-import team_9 from "@/assets/images/team-9.jpg";
 import portfolio_1 from "@/assets/images/portfolio-1.jpg";
 import portfolio_2 from "@/assets/images/portfolio-2.jpg";
 import portfolio_3 from "@/assets/images/portfolio-3.jpg";
@@ -193,7 +187,7 @@ export const teamData = [
   },
   {
     id: 4,
-    img: "/team1.jpg",
+    img: "",
     name: "МЕНЕДЖЕР ПРОЕКТОВ TRUMP",
     position: "Специализация: объекты под управлением бренда Trump",
     social_link: [
@@ -253,7 +247,7 @@ export const teamData = [
   },
   {
     id: 5,
-    img: "/team2.jpg",
+    img: "",
     name: "ЭКСПЕРТ ПО ИНВЕСТИЦИЯМ В ОАЭ",
     position: "Специализация: Дубай, Абу-Даби, Рас-эль-Хайма",
     social_link: [
@@ -313,7 +307,7 @@ export const teamData = [
   },
   {
     id: 6,
-    img: "/team3.jpg",
+    img: "",
     name: " СПЕЦИАЛИСТ ПО ВИЗАМ И РЕЗИДЕНЦИИ",
     position: "Специализация: Golden Visa, ПМЖ в Омане и ОАЭ",
     social_link: [
@@ -373,7 +367,7 @@ export const teamData = [
   },
   {
     id: 7,
-    img: "/team4.jpg",
+    img: "",
     name: "АНАЛИТИК РЫНКА НЕДВИЖИМОСТИ",
     position: "Специализация: тренды, прогнозы, оценка объектов",
     social_link: [
@@ -433,7 +427,7 @@ export const teamData = [
   },
   {
     id: 8,
-    img: "/team5.jpg",
+    img: "",
     name: "КОНСЬЕРЖ-СЕРВИС",
     position: "Специализация: полное сопровождение клиентов",
     social_link: [
@@ -493,7 +487,7 @@ export const teamData = [
   },
   {
     id: 9,
-    img: "/member3.jpg",
+    img: "",
     name: "МЕНЕДЖЕР ПО РАБОТЕ С ПАРТНЕРАМИ",
     position: "Специализация: сотрудничество с девелоперами",
     social_link: [

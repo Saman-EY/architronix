@@ -12,7 +12,7 @@ export const bannerOneData = [
     },
     {
         id: 2,
-        title: "TRUMP TOWER JEDDAH SAUDI ARABIA",
+        title: "TRUMP TOWER JEDDAH",
         heading_one: "SAUDI ARABIA",
         heading_two: "TRUMP TOWER",
         banner_img: hero_2,

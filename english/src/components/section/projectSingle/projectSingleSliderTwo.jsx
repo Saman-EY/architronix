@@ -12,19 +12,19 @@ import { staticBluarDataUrl } from "@/lib/staticBluarDataUrl";
 const projectImg = [
   {
     id: 1,
-    img: "/theLast.PNG",
+    img: "",
   },
   {
     id: 2,
-    img: "/service-top.jpg",
+    img: "",
   },
   {
     id: 3,
-    img: "/card4.PNG",
+    img: "",
   },
   {
     id: 4,
-    img: "/card5.PNG",
+    img: "",
   },
 ];
 const ProjectSingleSliderTwo = () => {
