@@ -74,7 +74,6 @@ function DetailsModal() {
   const [email, setEmail] = useState("");
   const [findUs, setFindUs] = useState("");
   const [selectedBrochure, setSelectedBrochure] = useState("");
-  const [comment, setComment] = useState("");
   const { detailModal } = useSelector((state) => state.othersRdx);
   const [loading, setLoading] = useState(false);
   const [countryCode, setCountryCode] = useState("+44");
@@ -114,7 +113,6 @@ function DetailsModal() {
         phone: fullPhone,
         email,
         how_he_find: findUs,
-        comment,
       };
 
       await publicApi.post("/api/send-details", body);
@@ -137,7 +135,6 @@ function DetailsModal() {
       setEmail("");
       setFindUs("");
       setSelectedBrochure("");
-      setComment("");
     } catch (error) {
       console.log("error", error);
       const messages = error?.response?.data || error?.message || "Something went wrong. Please try again.";
@@ -295,19 +292,6 @@ function DetailsModal() {
           </select>
           <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs">▼</span>
         </div>
-
-        <textarea
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          placeholder="Additional Comment"
-          className="border resize-none border-gray-500 p-2 rounded-md text-base"
-          name="comment"
-          id="comment"
-          rows={5}
-          onInput={(e) => {
-            e.currentTarget.value = e.currentTarget.value.replace(/^\s+/, "");
-          }}
-        ></textarea>
 
         <button
           onClick={handleSubmit}
