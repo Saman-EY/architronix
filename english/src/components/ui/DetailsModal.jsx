@@ -307,18 +307,6 @@ function DetailsModal() {
 
 export default DetailsModal;
 
-const PaymentCard = ({ title, price, desc }) => {
-  return (
-    <div className="bg-white p-3 flex flex-col justify-center items-center">
-      <div className="flex items-center gap-1 flex-wrap justify-center">
-        <h6 className="text-lg text-center">{price}</h6>
-        <span className="text-sm text-center">{title}</span>
-      </div>
-      <span className="text-xs text-slate-400 text-center">{desc}</span>
-    </div>
-  );
-};
-
 function CountryCodeSelect({ value, onChange }) {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");

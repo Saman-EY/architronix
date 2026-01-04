@@ -3,29 +3,33 @@ import React, { useEffect } from "react";
 import BottomNavbar from "./bottomNavbar";
 import MobileNavbar from "./mobileNavbar";
 import { useDispatch, useSelector } from "react-redux";
-import { setModalRdx } from "@/redux/others";
-import { AnimatePresence } from "framer-motion";
+import { setBrochureModalRdx } from "@/redux/others";
 import DetailsModal from "../ui/DetailsModal";
 import { usePathname } from "next/navigation";
+import BrochureModal from "../ui/BrochureModal";
 
 const HeaderThree = () => {
-  const { detailModal } = useSelector((state) => state.othersRdx);
+  const { detailModal, brochureModal } = useSelector((state) => state.othersRdx);
   const dispatch = useDispatch();
   const pathname = usePathname();
 
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
   useEffect(() => {
+    if (brochureModal || detailModal) {
+      setBrochureModalRdx(false);
+      return;
+    }
     const timer = setTimeout(() => {
       const hasSubmitted = localStorage.getItem(SUBMITTED_KEY);
 
       if (!hasSubmitted) {
-        dispatch(setModalRdx(true));
+        dispatch(setBrochureModalRdx(true));
       }
-    }, 8000); // 8 seconds
+    }, 30000); // 30 seconds
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, brochureModal, detailModal]);
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 overflow-x-clip">
@@ -43,6 +47,7 @@ const HeaderThree = () => {
         <MobileNavbar />
       </div>
       {detailModal && <DetailsModal />}
+      {brochureModal && <BrochureModal />}
     </header>
   );
 };

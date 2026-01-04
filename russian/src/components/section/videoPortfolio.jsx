@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import ButtonOutline from "../ui/buttons/buttonOutline";
 import VideoSec from "./VideoSec";
 import VideoPlay from "../ui/videoPlay";
+import DownloadBrochurBtn from "./heroes/DownloadBrochurBtn";
 
 const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
   return (
@@ -51,15 +52,16 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                   </span>{" "}
                 </li>
               </ul>
-              <Link href={"/project-single"} className="mt-[70px] inline-block">
+
+              <DownloadBrochurBtn parentClass={"mt-[70px] inline-block"}>
                 <ButtonOutline
                   className={
                     "border-secondary text-base md:text-lg text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
                   }
                 >
-                  УЗНАТЬ ПОДРОБНОСТИ <RightArrow width={"35"} height={"22"} />
+                  Скачать брошюру <RightArrow width={"35"} height={"22"} />
                 </ButtonOutline>
-              </Link>
+              </DownloadBrochurBtn>
             </div>
             <VideoPlay img={"/startOFvid.png"} />
             {/* <VideoSec /> */}

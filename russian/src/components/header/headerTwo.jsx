@@ -5,26 +5,31 @@ import MobileNavbar from "./mobileNavbar";
 import { useDispatch, useSelector } from "react-redux";
 import { usePathname } from "next/navigation";
 import DetailsModal from "../ui/DetailsModal";
-import { setModalRdx } from "@/redux/others";
+import { setBrochureModalRdx, setModalRdx } from "@/redux/others";
+import BrochureModal from "../ui/BrochureModal";
 
 const HeaderTwo = () => {
-  const { detailModal } = useSelector((state) => state.othersRdx);
+  const { detailModal, brochureModal } = useSelector((state) => state.othersRdx);
   const dispatch = useDispatch();
   const pathname = usePathname();
 
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
   useEffect(() => {
+    if (brochureModal || detailModal) {
+      setBrochureModalRdx(false);
+      return;
+    }
     const timer = setTimeout(() => {
       const hasSubmitted = localStorage.getItem(SUBMITTED_KEY);
 
       if (!hasSubmitted) {
-        dispatch(setModalRdx(true));
+        dispatch(setBrochureModalRdx(true));
       }
-    }, 8000); // 8 seconds
+    }, 30000); // 30 seconds
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, brochureModal, detailModal]);
 
   return (
     <header className="w-full bg-background shadow-md">
@@ -37,6 +42,7 @@ const HeaderTwo = () => {
         <MobileNavbar />
       </div>
       {detailModal && <DetailsModal />}
+      {brochureModal && <BrochureModal />}
     </header>
   );
 };

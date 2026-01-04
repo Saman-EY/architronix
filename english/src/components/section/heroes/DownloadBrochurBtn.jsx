@@ -39,7 +39,8 @@ function DownloadBrochurBtn({ children, parentClass }) {
         className={`sm:px-10 px-4 after:left-0 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground`}
       >
         {" "}
-        СМОТРЕТЬ ПРОЕКТЫ <RightArrow width={"35"} height={"22"} />{" "}
+        Download Brochur
+        <RightArrow width={"35"} height={"22"} />{" "}
       </ButtonFill>
     </div>
   );

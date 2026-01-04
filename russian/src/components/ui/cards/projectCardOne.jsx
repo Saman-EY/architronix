@@ -5,6 +5,7 @@ import RightArrow from "@/assets/icons/rightArrow";
 import ButtonFill from "../buttons/buttonFill";
 import Link from "next/link";
 import { staticBluarDataUrl } from "@/lib/staticBluarDataUrl";
+import DownloadBrochurBtn from "@/components/section/heroes/DownloadBrochurBtn";
 
 const ProjectCardOne = ({
   order,
@@ -70,15 +71,16 @@ const ProjectCardOne = ({
                   <span className="font-medium text-secondary-foreground">{location}</span>
                 </li>
               </ul>
-              <Link href={link}>
+
+              <DownloadBrochurBtn>
                 <ButtonFill
                   className={
                     "border-secondary text-primary-foreground hover:text-secondary-foreground after:left-0 after:bg-secondary"
                   }
                 >
-                  СЛЕДУЮЩИЙ ПРОЕКТ <RightArrow width={"35"} height={"22"} />
+                  Скачать брошюру <RightArrow width={"35"} height={"22"} />
                 </ButtonFill>
-              </Link>
+              </DownloadBrochurBtn>
             </div>
           </motion.div>
         </div>
