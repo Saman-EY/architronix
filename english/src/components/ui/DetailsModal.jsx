@@ -1,11 +1,20 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { setModalRdx } from "@/redux/others";
 import { useDispatch, useSelector } from "react-redux";
 import toast from "react-hot-toast";
 import { publicApi } from "@/lib/api";
-import Image from "next/image";
+import countries from "i18n-iso-countries";
+import en from "i18n-iso-countries/langs/en.json";
+import { getCountries, getCountryCallingCode } from "libphonenumber-js";
+
+countries.registerLocale(en);
+const COUNTRY_CODES3 = getCountries().map((iso) => ({
+  iso,
+  label: countries.getName(iso, "en"),
+  code: `+${getCountryCallingCode(iso)}`,
+}));
 
 const BrochureList = [
   {
@@ -68,6 +77,9 @@ function DetailsModal() {
   const [comment, setComment] = useState("");
   const { detailModal } = useSelector((state) => state.othersRdx);
   const [loading, setLoading] = useState(false);
+  const [countryCode, setCountryCode] = useState("+44");
+
+  console.log("**", COUNTRY_CODES3);
 
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
 
@@ -95,10 +107,14 @@ function DetailsModal() {
 
     try {
       setLoading(true);
+      const fullPhone = `${countryCode}${phone}`;
+
       const body = {
         fullname,
-        phone,
+        phone: fullPhone,
         email,
+        how_he_find: findUs,
+        comment,
       };
 
       await publicApi.post("/api/send-details", body);
@@ -106,7 +122,6 @@ function DetailsModal() {
       toast.success("Your details were submitted successfully ✅");
       localStorage.setItem(SUBMITTED_KEY, "true");
       dispatch(setModalRdx(false));
-      // window.open("/brochure.pdf", "_blank");
 
       const link = document.createElement("a");
       link.href = "/brochure.pdf";
@@ -120,6 +135,9 @@ function DetailsModal() {
       setFullname("");
       setPhone("");
       setEmail("");
+      setFindUs("");
+      setSelectedBrochure("");
+      setComment("");
     } catch (error) {
       console.log("error", error);
       const messages = error?.response?.data || error?.message || "Something went wrong. Please try again.";
@@ -177,7 +195,7 @@ function DetailsModal() {
             e.currentTarget.value = e.currentTarget.value.replace(/^\s+/, "");
           }}
         />
-        <input
+        {/* <input
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           type="text"
@@ -196,7 +214,25 @@ function DetailsModal() {
 
             e.currentTarget.value = value;
           }}
-        />
+        /> */}
+
+        <div className="flex gap-1">
+          {/* Country code select */}
+          <CountryCodeSelect value={countryCode} onChange={setCountryCode} />
+
+          {/* Phone input */}
+          <input
+            type="tel"
+            value={phone}
+            onChange={(e) => {
+              const value = e.target.value.replace(/\D/g, "");
+              setPhone(value);
+            }}
+            placeholder="Phone number"
+            className="border border-gray-500 rounded-md p-2 text-base flex-1"
+          />
+        </div>
+
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -298,3 +334,82 @@ const PaymentCard = ({ title, price, desc }) => {
     </div>
   );
 };
+
+function CountryCodeSelect({ value, onChange }) {
+  const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState("");
+  const ref = useRef(null);
+
+  const normalizedCountries = useMemo(
+    () =>
+      COUNTRY_CODES3.map((c) => ({
+        ...c,
+        label: c.label ?? c.iso,
+      })),
+    []
+  );
+
+  const filtered = useMemo(() => {
+    const q = search.toLowerCase().trim();
+    if (!q) return normalizedCountries;
+
+    return normalizedCountries.filter(
+      (c) => c.label.toLowerCase().includes(q) || c.iso.toLowerCase().includes(q) || c.code.includes(q)
+    );
+  }, [search, normalizedCountries]);
+
+  console.log("*filtered", filtered);
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative bg-white min-w-18">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="w-full border rounded-md px-3 py-2 text-base flex justify-between items-center"
+      >
+        {value}
+        <span className="text-xs">▼</span>
+      </button>
+
+      {open && (
+        <div className="absolute z-20 mt-1 w-full min-w-60 bg-white border rounded-md shadow-md">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full px-2 py-1 border-b text-sm outline-none"
+          />
+
+          <div className="max-h-48 overflow-y-auto">
+            {filtered.length === 0 && <div className="p-3 text-sm text-slate-500">No results found</div>}
+
+            {filtered.map((c) => (
+              <button
+                key={c.iso}
+                onClick={() => {
+                  onChange(c.code);
+                  setOpen(false);
+                  setSearch("");
+                }}
+                className="w-full text-left px-3 py-2 hover:bg-gray-100 text-sm"
+              >
+                {c.label} ({c.code})
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
