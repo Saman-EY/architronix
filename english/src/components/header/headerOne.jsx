@@ -18,6 +18,7 @@ const HeaderOne = () => {
 
   useEffect(() => {
     if (brochureModal || detailModal) {
+      setBrochureModalRdx(false);
       return;
     }
     const timer = setTimeout(() => {
@@ -29,7 +30,7 @@ const HeaderOne = () => {
     }, 30000); // 30 seconds
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, brochureModal, detailModal]);
 
   return (
     <>

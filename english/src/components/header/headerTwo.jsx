@@ -17,6 +17,8 @@ const HeaderTwo = () => {
 
   useEffect(() => {
     if (brochureModal || detailModal) {
+      setBrochureModalRdx(false);
+
       return;
     }
     const timer = setTimeout(() => {
@@ -28,7 +30,7 @@ const HeaderTwo = () => {
     }, 30000); // 30 seconds
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, brochureModal, detailModal]);
 
   return (
     <header className="w-full bg-background shadow-md">

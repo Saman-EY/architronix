@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import ButtonOutline from "../ui/buttons/buttonOutline";
 import ButtonFill from "../ui/buttons/buttonFill";
 import { projectsData } from "@/lib/fackData/projectsData";
+import DownloadBrochurBtn from "./heroes/DownloadBrochurBtn";
 
 const ProjectsSlider = ({ text_muted, bg_muted }) => {
   const swiperRef = useRef();
@@ -33,7 +34,14 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
           sectionName={"Projects"}
           sectionTitle={"WHERE LUXURY BECOMES OPPORTUNITY"}
           sectionDesc={"TRANSFORMING HOW THE WORLD LIVES AND INVESTS"}
-          button_text={"DOWNLOAD BROCHURE"}
+          // button_text={"DOWNLOAD BROCHURE"}
+          downloadPdf={
+            <DownloadBrochurBtn>
+              <ButtonOutline className={cn(`2sm:px-10 px-3 after:left-0 after:${bg_muted}`)}>
+                DOWNLOAD BROCHURE <RightArrow height={"22"} width={"35"} />{" "}
+              </ButtonOutline>
+            </DownloadBrochurBtn>
+          }
           link={"/project-archive"}
           bg_muted={bg_muted}
           text_muted={text_muted}
@@ -78,11 +86,12 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                       Type:
                       <span className="text-lg font-normal">{project_type}</span>
                     </h6>
-                    <Link href={"/project-archive"} className="4xl:block hidden">
+
+                    <DownloadBrochurBtn>
                       <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">
                         DOWNLOAD BROCHURE
                       </ButtonOutline>
-                    </Link>
+                    </DownloadBrochurBtn>
                   </div>
                 </div>
               </SwiperSlide>

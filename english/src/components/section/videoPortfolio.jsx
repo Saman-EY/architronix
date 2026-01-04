@@ -52,7 +52,8 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                   <span className="text-secondary-foreground text-lg leading-160 font-bold">LUXURY AT ITS FINEST</span>{" "}
                 </li>
               </ul>
-              <Link href={"/"} className="mt-[70px] inline-block">
+
+              <DownloadBrochurBtn>
                 <ButtonOutline
                   className={
                     "border-secondary text-base md:text-lg text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
@@ -60,7 +61,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                 >
                   DOWNLOAD BROCHURE <RightArrow width={"35"} height={"22"} />
                 </ButtonOutline>
-              </Link>
+              </DownloadBrochurBtn>
             </div>
             <VideoPlay img={"/startOFvid.png"} />
             {/* <VideoSec /> */}

@@ -3,6 +3,7 @@ import feedback_bg from "@/assets/images/feedback-image.jpg";
 import RightArrow from "@/assets/icons/rightArrow";
 import ButtonFill from "../ui/buttons/buttonFill";
 import Link from "next/link";
+import DownloadBrochurBtn from "./heroes/DownloadBrochurBtn";
 
 const Feedback = () => {
   return (
@@ -14,7 +15,8 @@ const Feedback = () => {
         <h1 className="text-[50px] md:text-[100px] font-extrabold leading-110 text-secondary-foreground max-w-[600px]">
           Choose your residence
         </h1>
-        <Link href={"/contact"}>
+
+        <DownloadBrochurBtn>
           <ButtonFill
             className={
               "after:left-0 after:bg-secondary text-primary-foreground text-sm sm:text-2xl border-secondary hover:text-secondary-foreground mt-6 md:mt-0"
@@ -22,7 +24,7 @@ const Feedback = () => {
           >
             DOWNLOAD BROCHURE <RightArrow width={"35"} height={"22"} />{" "}
           </ButtonFill>
-        </Link>
+        </DownloadBrochurBtn>
       </div>
     </section>
   );

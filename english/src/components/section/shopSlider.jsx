@@ -6,6 +6,10 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import ProductCard from "../ui/cards/productCard";
 import ProgressAndNatigation from "../ui/progressAndNatigation";
+import DownloadBrochurBtn from "./heroes/DownloadBrochurBtn";
+import ButtonOutline from "../ui/buttons/buttonOutline";
+import { cn } from "@/lib/utils";
+import RightArrow from "@/assets/icons/rightArrow";
 
 const ShopSlider = ({ data, text_muted, bg_muted }) => {
   const pagination = {
@@ -21,7 +25,13 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
           sectionTitle={"OUR OFFICES •9 / PROJECT CITIES •11"}
           sectionDesc={"ONE GLOBAL NETWORK BOUNDLESS OPPORTUNIT"}
           link={"/"}
-          button_text={"DOWNLOAD BROCHURE"}
+          downloadPdf={
+            <DownloadBrochurBtn>
+              <ButtonOutline className={cn(`2sm:px-10 px-3 after:left-0 after:${bg_muted}`)}>
+                DOWNLOAD BROCHURE <RightArrow height={"22"} width={"35"} />{" "}
+              </ButtonOutline>
+            </DownloadBrochurBtn>
+          }
           bg_muted={bg_muted}
           text_muted={text_muted}
         />
