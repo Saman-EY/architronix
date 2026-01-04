@@ -10,21 +10,27 @@ function DownloadBrochurBtn({ children, parentClass }) {
 
   const handleClick = () => {
     const hasSubmitted = localStorage.getItem(SUBMITTED_KEY);
-    if (!hasSubmitted) {
-      dispatch(setModalRdx(true));
-    } else {
-      const link = document.createElement("a");
-      link.href = "/brochure.pdf";
-      link.target = "_blank";
-      link.rel = "noopener";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
+    dispatch(setModalRdx(true));
+
+    // if (!hasSubmitted) {
+    //   dispatch(setModalRdx(true));
+    // } else {
+    //   const link = document.createElement("a");
+    //   link.href = "/brochure.pdf";
+    //   link.target = "_blank";
+    //   link.rel = "noopener";
+    //   document.body.appendChild(link);
+    //   link.click();
+    //   document.body.removeChild(link);
+    // }
   };
 
   if (children) {
-    return <div className={`mt-10 inline-block ${parentClass}`} onClick={handleClick}>{children}</div>;
+    return (
+      <div className={`mt-10 inline-block ${parentClass}`} onClick={handleClick}>
+        {children}
+      </div>
+    );
   }
 
   return (

@@ -7,11 +7,65 @@ import toast from "react-hot-toast";
 import { publicApi } from "@/lib/api";
 import Image from "next/image";
 
+const BrochureList = [
+  {
+    value: "1",
+    title: "TRUMP INTERNATIONAL HOTEL & TOWER DUBAI",
+  },
+  {
+    value: "2",
+    title: "AIDA OMAN",
+  },
+  {
+    value: "3",
+    title: "LES VAGUES BY ELIE SAAB QATAR",
+  },
+  {
+    value: "4",
+    title: "TRUMP INTERNATIONAL HOTEL, OMAN",
+  },
+  {
+    value: "5",
+    title: "TRUMP CLIFF VILLAS OMAN",
+  },
+  {
+    value: "6",
+    title: "TRUMP GOLF VILLAS OMAN",
+  },
+  {
+    value: "7",
+    title: "AMOUR SANS DETOUR OMAN",
+  },
+  {
+    value: "8",
+    title: "COASTAL INVESTMENT VILLAS OMAN",
+  },
+  {
+    value: "9",
+    title: "THE GREAT ESCAPE OMAN",
+  },
+  {
+    value: "10",
+    title: "THE GREAT ESCAPE 2 OMAN",
+  },
+  {
+    value: "11",
+    title: "SUNRISE HAVEN OMAN",
+  },
+  {
+    value: "12",
+    title: "MAREA, INTERIORS BY MISSONI SPAIN",
+  },
+];
+
 function DetailsModal() {
   const dispatch = useDispatch();
   const [fullname, setFullname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [findUs, setFindUs] = useState("");
+  const [selectedBrochure, setSelectedBrochure] = useState("");
+  const [comment, setComment] = useState("");
   const { detailModal } = useSelector((state) => state.othersRdx);
   const [loading, setLoading] = useState(false);
 
@@ -28,6 +82,14 @@ function DetailsModal() {
     }
     if (!email) {
       toast.error("email is required");
+      return;
+    }
+    if (!findUs) {
+      toast.error("Please tell us how you found us");
+      return;
+    }
+    if (!selectedBrochure) {
+      toast.error("Please select a brochure");
       return;
     }
 
@@ -103,28 +165,13 @@ function DetailsModal() {
           X
         </button>
 
-        <section className="">
-          <Image className="w-full object-cover h-[180px]" width={500} height={500} src={"/topFooter.JPG"} alt="" />
-
-          <div className="flex flex-col gap-3">
-            <h6 className="text-xl text-center mt-3 font-semibold">Скачать брошюру</h6>
-
-            <div className="grid grid-cols-2 gap-4">
-              <PaymentCard desc={""} price={"100%"} title={"ГАРАНТИЯ БАНКА ОМАНА"} />
-              <PaymentCard desc={"Сейчас"} price={"20%"} title={"ВЗНОС"} />
-              <PaymentCard desc={"6 мес."} price={"10%"} title={"1-Й ПЛАТЁЖ"} />
-              <PaymentCard desc={"12 мес."} price={"10%"} title={"2-Й ПЛАТЁЖ"} />
-              <PaymentCard desc={"24 мес."} price={"10%"} title={"3-Й ПЛАТЁЖ"} />
-              <PaymentCard desc={"При готовности"} price={"50%"} title={"ФИНАЛЬНЫЙ"} />
-            </div>
-          </div>
-        </section>
+        <h6 className="text-lg font-semibold text-center">DOWNLOAD BROCHURE</h6>
 
         <input
           value={fullname}
           onChange={(e) => setFullname(e.target.value)}
           type="text"
-          placeholder="Ваше имя"
+          placeholder="Full Name"
           className="border border-gray-500 rounded-md p-2 text-base"
           onInput={(e) => {
             e.currentTarget.value = e.currentTarget.value.replace(/^\s+/, "");
@@ -134,7 +181,7 @@ function DetailsModal() {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           type="text"
-          placeholder="Номер телефона"
+          placeholder="Phone"
           className="border border-gray-500 rounded-md p-2 text-base"
           onInput={(e) => {
             let value = e.currentTarget.value;
@@ -154,19 +201,84 @@ function DetailsModal() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
-          placeholder="E-Mail адрес"
+          placeholder="E-Mail"
           className="border border-gray-500 rounded-md p-2 text-base"
           onInput={(e) => {
             e.currentTarget.value = e.currentTarget.value.replace(/^\s+/, "");
           }}
         />
+        <div className="relative w-full">
+          <select
+            onChange={(e) => setFindUs(e.target.value)}
+            value={findUs}
+            className={`h-10 px-2 w-full custom-select ${
+              !findUs ? "text-slate-400" : ""
+            }  border border-gray-500 rounded-md text-base`}
+            name="find-us"
+            id="find-us"
+          >
+            <option disabled value="">
+              How did you find us
+            </option>
+            <option className="text-slate-600" value="twitter">
+              Twitter
+            </option>
+            <option className="text-slate-600" value="facebook">
+              Facebook
+            </option>
+            <option className="text-slate-600" value="instagram">
+              Instagram
+            </option>
+            <option className="text-slate-600" value="google">
+              Google
+            </option>
+            <option className="text-slate-600" value="others">
+              others
+            </option>
+          </select>
+          <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs">▼</span>
+        </div>
+        <div className="relative w-full">
+          <select
+            onChange={(e) => setSelectedBrochure(e.target.value)}
+            value={selectedBrochure}
+            className={`h-10 w-full ${
+              !selectedBrochure ? "text-slate-400" : ""
+            } custom-select px-2  border border-gray-500 rounded-md text-base`}
+            name="find-us"
+            id="find-us"
+          >
+            <option disabled value="">
+              Select Brochure
+            </option>
+            {BrochureList.map((brochure) => (
+              <option key={brochure.value} className="text-slate-600" value={brochure.value}>
+                {brochure.title}
+              </option>
+            ))}
+          </select>
+          <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs">▼</span>
+        </div>
+
+        <textarea
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+          placeholder="Additional Comment"
+          className="border resize-none border-gray-500 p-2 rounded-md text-base"
+          name="comment"
+          id="comment"
+          rows={5}
+          onInput={(e) => {
+            e.currentTarget.value = e.currentTarget.value.replace(/^\s+/, "");
+          }}
+        ></textarea>
 
         <button
           onClick={handleSubmit}
           disabled={loading}
           className="px-6 py-2 text-white hover:bg-black/80 transition-all text-sm md:text-base bg-black mt-auto cursor-pointer rounded disabled:opacity-50"
         >
-          Скачать брошюру
+          Download Brochure
         </button>
       </motion.div>
     </section>

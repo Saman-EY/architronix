@@ -307,3 +307,9 @@ body {
     max-width: 1320px;
   }
 }
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
