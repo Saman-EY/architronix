@@ -10,9 +10,17 @@ import ButtonOutline from "../ui/buttons/buttonOutline";
 import { cn } from "@/lib/utils";
 import RightArrow from "@/assets/icons/rightArrow";
 import DownloadBrochurBtn from "./heroes/DownloadBrochurBtn";
+import { useDispatch } from "react-redux";
+import { setModalRdx } from "@/redux/others";
 
 const Gallery = ({ text_muted, bg_muted }) => {
   const [expendItem, setExpendItem] = useState("02");
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(setModalRdx(true));
+  };
+
   return (
     <section className="pt-20">
       <div className="container-fluid ">
@@ -38,9 +46,10 @@ const Gallery = ({ text_muted, bg_muted }) => {
           return (
             <div
               key={id}
+              onClick={handleClick}
               onMouseEnter={() => setExpendItem(id)}
               onMouseLeave={() => setExpendItem("02")}
-              className={` ${
+              className={`cursor-pointer ${
                 expendItem === id ? "lg:basis-[47%] basis-[50%]" : "lg:basis-[20%] basis-[30%]"
               } flex-grow sm:min-h-[750px] min-h-[420px] max-h-[500px] overflow-hidden group transition-all duration-700 relative`}
             >
@@ -57,12 +66,9 @@ const Gallery = ({ text_muted, bg_muted }) => {
                     expendItem === id ? "flex-col" : "flex-col sm:flex-row"
                   } items-start justify-between 2xl:items-end`}
                 >
-                  <Link
-                    href={link}
-                    className="text-3xl 2sm:text-4xl font-bold leading-135 text-white max-w-60 2xl:min-w-56 min-w-48 relative"
-                  >
+                  <div className="text-3xl 2sm:text-4xl font-bold leading-135 text-white max-w-60 2xl:min-w-56 min-w-48 relative">
                     {img_title}
-                  </Link>
+                  </div>
                   <p
                     className={`text-secondary-foreground font-semibold 3xl:max-w-[421px] 2xl:max-w-80 transition-all duration-700 3xl:min-w-[420px] xl:min-w-80 min-w-72 overflow-hidden  ${
                       expendItem === id ? "opacity-100" : "sm:opacity-0 opacity-100"

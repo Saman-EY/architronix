@@ -52,8 +52,8 @@ const Footer = () => {
     <footer className=" container-fluid  mx-auto ">
       <div className=" bg-secondary ">
         <div className="container">
-          <div className="flex flex-col md:flex-row justify-around items-start pt-[100px] pb-20">
-            <div className="w-full ">
+          <div className="flex flex-col lg:flex-row justify-around items-start pt-[100px] pb-20">
+            <div className="w-full md:w-[40%] xl:w-full ">
               <Link href={"/"} className="text-primary-foreground">
                 <span className="text-primary font-bold text-4xl">OUR OFFICES</span>
               </Link>

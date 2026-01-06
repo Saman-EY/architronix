@@ -31,7 +31,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
     <section className="pt-20">
       <div className="container-fluid ">
         <SectionTitle
-          sectionName={"Projects"}
+          sectionName={"GULF DOM"}
           sectionTitle={"WHERE LUXURY BECOMES OPPORTUNITY"}
           sectionDesc={"TRANSFORMING HOW THE WORLD LIVES AND INVESTS"}
           // button_text={"DOWNLOAD BROCHURE"}
@@ -82,13 +82,13 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                       Year:
                       <span className="text-lg font-normal">{project_year}</span>
                     </h6>
-                    <h6 className="flex flex-col w-full max-w-[11rem] text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
+                    <h6 className="flex flex-col w-full max-w-[16rem] text-lg md:text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap">
                       Type:
-                      <span className="text-lg font-normal">{project_type}</span>
+                      <span className="text-lg font-normal  text-wrap">{project_type}</span>
                     </h6>
 
                     <DownloadBrochurBtn>
-                      <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">
+                      <ButtonOutline className="border-secondary text-xs sm:text-base lg:text-2xl text-secondary-foreground sm:px-5 px-3 whitespace-nowrap hover:border-primary">
                         DOWNLOAD BROCHURE
                       </ButtonOutline>
                     </DownloadBrochurBtn>

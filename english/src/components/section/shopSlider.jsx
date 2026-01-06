@@ -49,9 +49,7 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
               1200: {
                 slidesPerView: 3,
               },
-              1400: {
-                slidesPerView: 4,
-              },
+            
             }}
             pagination={pagination}
             loop={true}

@@ -26,7 +26,7 @@ const VideoPlay = ({ img }) => {
           alt="video"
           width={500}
           height={500}
-          className="w-full min-w-[500px] min-h-[500px] max-w-[698px] mx-auto h-full max-h-[700px] object-cover"
+          className="w-full md:min-w-[500px] min-h-[500px] max-w-[698px] mx-auto h-full max-h-[700px] object-cover"
         />
         {isOpen && (
           <div

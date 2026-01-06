@@ -46,7 +46,7 @@ const Home = () => {
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
-            sectionName={"Blog"}
+            sectionName={"GULF DOM"}
             sectionTitle={"ELITE COLLABORATORS SINGULAR RESULTS"}
             sectionDesc={"LUXURY ABOVE ALL"}
           />
