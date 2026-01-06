@@ -49,7 +49,6 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
               1200: {
                 slidesPerView: 3,
               },
-            
             }}
             pagination={pagination}
             loop={true}
@@ -71,7 +70,7 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
                 </SwiperSlide>
               );
             })}
-            <div className="container">
+            <div className="container xl:hidden">
               <ProgressAndNatigation />
             </div>
           </Swiper>

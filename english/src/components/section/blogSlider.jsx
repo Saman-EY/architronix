@@ -42,7 +42,9 @@ const BlogSlider = ({ data, text_muted }) => {
           </SwiperSlide>
         );
       })}
-      <ProgressAndNatigation />
+      <div className="xl:hidden">
+        <ProgressAndNatigation />
+      </div>
     </Swiper>
   );
 };
