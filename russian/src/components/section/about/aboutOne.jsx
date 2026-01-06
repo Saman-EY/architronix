@@ -51,11 +51,11 @@ const AboutOne = ({ text_muted, bg_muted }) => {
               <ul className="lg:mt-0 mt-20 lg:pb-0 pb-10">
                 {aboutList.map(({ id, item, item_desc }) => {
                   return (
-                    <li key={id} className="lg:flex gap-10 pb-10 last:pb-0 justify-between">
+                    <li key={id} className="lg:flex gap-10 pb-10 last:pb-0 justify-between ">
                       <svg
                         ref={ref}
                         strokeWidth="1"
-                        className={`h-[65px] w-20 relative -top-2 left-3 xl:text-6xl text-5xl mb-3 lg:mb-0 inline-block font-extrabold leading-120  ${
+                        className={`h-[65px]  w-28 relative -top-2 left-3 xl:text-6xl text-5xl mb-3 lg:mb-0 inline-block font-extrabold leading-120  ${
                           inView
                             ? "animate-text-line-animation stroke-secondary stroke-dasharray-1000 stroke-dashoffset-1000"
                             : " fill-transparent stroke-secondary "

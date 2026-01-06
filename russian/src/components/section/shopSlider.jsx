@@ -21,7 +21,7 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
           sectionTitle={"БРЕНД GULF DOM"}
           sectionDesc={"ЭКСКЛЮЗИВНЫЙ ДОСТУП К ПРОЕКТАМ DAR GLOBAL"}
           link={"/about-us"}
-          button_text={"СМОТРЕТЬ ПРОЕКТЫ"}
+          button_text={"СМОТРЕТЬ "}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

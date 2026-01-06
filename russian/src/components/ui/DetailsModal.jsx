@@ -212,7 +212,7 @@ function DetailsModal() {
             id="find-us"
           >
             <option disabled value="">
-              How did you find us
+              Как вы нас нашли?
             </option>
             <option className="text-slate-600" value="twitter">
               Twitter
@@ -243,7 +243,7 @@ function DetailsModal() {
             id="find-us"
           >
             <option disabled value="">
-              Select Brochure
+              Выбрать брошюру
             </option>
             {BrochureList.map((brochure) => (
               <option key={brochure.value} className="text-slate-600" value={brochure.value}>
