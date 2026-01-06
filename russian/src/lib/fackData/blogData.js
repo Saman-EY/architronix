@@ -5,7 +5,7 @@ import blog_3 from "@/assets/images/blog-image-3.jpg";
 export const blogData = [
   {
     id: 1,
-    thumb: "/career3.PNG",
+    thumb: "/career3.png",
     author: "",
     date: "2025",
     tag: "Оман",

@@ -73,7 +73,7 @@ export const teamData = [
   },
   {
     id: 2,
-    img: "/career2.PNG",
+    img: "/career2.png",
     name: "ЭКСПЕРТ ПО ИНВЕСТИЦИЯМ",
     position: "Специализация: проекты Dar Global в ОАЭ и Омане",
     social_link: [
@@ -133,7 +133,7 @@ export const teamData = [
   },
   {
     id: 3,
-    img: "/career3.PNG",
+    img: "/career3.png",
     name: "КООРДИНАТОР ПРОДАЖ",
     position: "Специализация: премиум-клиенты и визовое сопровождение",
     social_link: [
