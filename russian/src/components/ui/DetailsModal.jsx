@@ -19,52 +19,12 @@ const COUNTRY_CODES3 = getCountries().map((iso) => ({
 
 const BrochureList = [
   {
-    value: "1",
-    title: "TRUMP INTERNATIONAL HOTEL & TOWER DUBAI",
+    value: "/dubai.pdf",
+    title: "DUBAI TRUMP HOTEL ",
   },
   {
-    value: "2",
+    value: "/aida.pdf",
     title: "AIDA OMAN",
-  },
-  {
-    value: "3",
-    title: "LES VAGUES BY ELIE SAAB QATAR",
-  },
-  {
-    value: "4",
-    title: "TRUMP INTERNATIONAL HOTEL, OMAN",
-  },
-  {
-    value: "5",
-    title: "TRUMP CLIFF VILLAS OMAN",
-  },
-  {
-    value: "6",
-    title: "TRUMP GOLF VILLAS OMAN",
-  },
-  {
-    value: "7",
-    title: "AMOUR SANS DETOUR OMAN",
-  },
-  {
-    value: "8",
-    title: "COASTAL INVESTMENT VILLAS OMAN",
-  },
-  {
-    value: "9",
-    title: "THE GREAT ESCAPE OMAN",
-  },
-  {
-    value: "10",
-    title: "THE GREAT ESCAPE 2 OMAN",
-  },
-  {
-    value: "11",
-    title: "SUNRISE HAVEN OMAN",
-  },
-  {
-    value: "12",
-    title: "MAREA, INTERIORS BY MISSONI SPAIN",
   },
 ];
 
@@ -123,7 +83,7 @@ function DetailsModal() {
       dispatch(setModalRdx(false));
 
       const link = document.createElement("a");
-      link.href = "/brochure.pdf";
+      link.href = selectedBrochure;
       link.target = "_blank";
       link.rel = "noopener";
       document.body.appendChild(link);
@@ -299,12 +259,11 @@ function DetailsModal() {
           disabled={loading}
           className="px-6 py-2 text-white hover:bg-black/80 transition-all text-sm md:text-base bg-black mt-auto cursor-pointer rounded disabled:opacity-50"
         >
-         Скачать брошюру
+          Скачать брошюру
         </button>
       </motion.div>
     </section>
   );
-
 }
 
 export default DetailsModal;

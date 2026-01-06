@@ -18,52 +18,20 @@ const COUNTRY_CODES3 = getCountries().map((iso) => ({
 
 const BrochureList = [
   {
-    value: "1",
-    title: "TRUMP INTERNATIONAL HOTEL & TOWER DUBAI",
+    value: "/dubai.pdf",
+    title: "DUBAI TRUMP INTERNATIONAL HOTEL & TOWER",
   },
   {
-    value: "2",
-    title: "AIDA OMAN",
-  },
-  {
-    value: "3",
+    value: "/les_vegaus.pdf",
     title: "LES VAGUES BY ELIE SAAB QATAR",
   },
   {
-    value: "4",
-    title: "TRUMP INTERNATIONAL HOTEL, OMAN",
+    value: "/aida.pdf",
+    title: "AIDA OMAN",
   },
   {
-    value: "5",
-    title: "TRUMP CLIFF VILLAS OMAN",
-  },
-  {
-    value: "6",
-    title: "TRUMP GOLF VILLAS OMAN",
-  },
-  {
-    value: "7",
-    title: "AMOUR SANS DETOUR OMAN",
-  },
-  {
-    value: "8",
-    title: "COASTAL INVESTMENT VILLAS OMAN",
-  },
-  {
-    value: "9",
-    title: "THE GREAT ESCAPE OMAN",
-  },
-  {
-    value: "10",
-    title: "THE GREAT ESCAPE 2 OMAN",
-  },
-  {
-    value: "11",
-    title: "SUNRISE HAVEN OMAN",
-  },
-  {
-    value: "12",
-    title: "MAREA, INTERIORS BY MISSONI SPAIN",
+    value: "/trump-tower.pdf",
+    title: "TRUMP TOWER JEDDAH SAUDI ARABIA",
   },
 ];
 
@@ -122,7 +90,8 @@ function DetailsModal() {
       dispatch(setModalRdx(false));
 
       const link = document.createElement("a");
-      link.href = "/brochure.pdf";
+      // link.href = "/brochure.pdf";
+      link.href = selectedBrochure;
       link.target = "_blank";
       link.rel = "noopener";
       document.body.appendChild(link);
@@ -136,13 +105,13 @@ function DetailsModal() {
       setFindUs("");
       setSelectedBrochure("");
     } catch (error) {
-      console.log("error", error);
       const messages = error?.response?.data || error?.message || "Something went wrong. Please try again.";
-      if (messages.invalidParams.length > 0) {
+      console.log("*error", error, messages);
+      if (messages?.invalidParams?.length > 0) {
         console.log(messages.invalidParams[0].message);
         toast.error(messages.invalidParams[0].message);
       } else {
-        toast.error("Something went wrong.");
+        toast.error(messages);
       }
     } finally {
       setLoading(false);

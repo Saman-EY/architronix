@@ -11,6 +11,7 @@ import BrochureModal from "../ui/BrochureModal";
 const HeaderThree = () => {
   const { detailModal, brochureModal } = useSelector((state) => state.othersRdx);
   const dispatch = useDispatch();
+  
   const pathname = usePathname();
 
   const SUBMITTED_KEY = "jasdkhjzxcnbasdhui84392";
