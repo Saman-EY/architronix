@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ButtonFill from "../buttons/buttonFill";
+import DownloadBrochurBtn from "@/components/section/heroes/DownloadBrochurBtn";
 
 const JobPostCard = ({ id, time, job_name, location, date_line, level, salary, link }) => {
   return (
@@ -32,10 +33,10 @@ const JobPostCard = ({ id, time, job_name, location, date_line, level, salary, l
           <span>{salary.range}</span>
         </p>
       </div>
-      <Link href={`/${link}`}>
-        {" "}
-        <ButtonFill className={"px-7.5 py-2.5 !text-lg"}>REGISTER  INTEREST</ButtonFill>{" "}
-      </Link>
+
+      <DownloadBrochurBtn parentClass={"mt-0"}>
+        <ButtonFill className={"px-7.5 py-2.5 !text-lg"}>REGISTER INTEREST</ButtonFill>{" "}
+      </DownloadBrochurBtn>
     </li>
   );
 };
